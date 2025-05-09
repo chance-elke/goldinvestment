@@ -1,0 +1,4420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Comprehensive Gold IRA Guide: Learn about self-directed precious metals IRAs, tax benefits, setup process, and how to protect your retirement with gold." />
+  <title>Gold IRA Guide | Complete Walkthrough of Gold Investment Retirement Accounts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-primary: #d4af37;
+      --gold-light: #f5e7a3;
+      --gold-dark: #a17c1a;
+      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #ffdd75 50%, #d4af37 100%);
+      --dark: #1c1c1c;
+      --dark-gradient: linear-gradient(135deg, #1c1c1c 0%, #323232 100%);
+      --gray-light: #f8f8f8;
+      --gray-medium: #eaeaea;
+      --white: #ffffff;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.15);
+      --shadow-gold: 0 6px 15px rgba(212, 175, 55, 0.2);
+      --blue-accent: #3a6ea5;
+      --green-accent: #4CAF50;
+      --red-accent: #e74c3c;
+      --transition: all 0.3s ease;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--gray-light);
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .nav-container {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--dark);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo span {
+      color: var(--gold-primary);
+    }
+    
+    .logo:before {
+      content: "●";
+      color: var(--gold-primary);
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin-left: 2rem;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: var(--transition);
+      position: relative;
+    }
+    
+    .nav-links a:hover {
+      color: var(--gold-primary);
+    }
+    
+    .nav-links a.active {
+      color: var(--gold-primary);
+    }
+    
+    .nav-links a.active:after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--gold-primary);
+    }
+    
+    .gold-price-ticker {
+      background-color: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    
+    .ticker-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .price-up {
+      color: #4CAF50;
+    }
+    
+    .price-down {
+      color: #e74c3c;
+    }
+    
+    .guide-header {
+      background: var(--dark-gradient);
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .guide-header:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/api/placeholder/1200/600');
+      background-size: cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+    
+    .header-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .guide-header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .guide-header h1 span {
+      color: var(--gold-primary);
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: none;
+    }
+    
+    .guide-header p {
+      font-size: 1.4rem;
+      margin-bottom: 2.5rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .cta-primary {
+      background: var(--gold-gradient);
+      color: var(--dark);
+      padding: 1rem 2.5rem;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      margin-top: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 15px rgba(165, 126, 26, 0.4);
+      font-size: 1.1rem;
+    }
+    
+    .cta-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(165, 126, 26, 0.5);
+    }
+    
+    .cta-secondary {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      margin-top: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .cta-secondary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      background-color: #2a2a2a;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    
+    .guide-navigation {
+      position: sticky;
+      top: 80px;
+      background-color: var(--white);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      margin-bottom: 2rem;
+      z-index: 90;
+      transition: var(--transition);
+    }
+    
+    .guide-navigation.scrolled {
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .guide-nav-links {
+      display: flex;
+      list-style: none;
+      overflow-x: auto;
+      padding: 0.5rem;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .guide-nav-links li {
+      flex-shrink: 0;
+    }
+    
+    .guide-nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      transition: var(--transition);
+      display: inline-block;
+      white-space: nowrap;
+    }
+    
+    .guide-nav-links a:hover {
+      background-color: var(--gold-light);
+      color: var(--dark);
+    }
+    
+    .guide-nav-links a.active {
+      background-color: var(--gold-primary);
+      color: var(--dark);
+    }
+    
+    .guide-intro {
+      background-color: var(--white);
+      border-radius: 15px;
+      padding: 2.5rem;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .guide-intro:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      background: var(--gold-gradient);
+      opacity: 0.1;
+      border-radius: 0 0 0 100%;
+    }
+    
+    .guide-intro-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .guide-intro h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+      position: relative;
+      display: inline-block;
+    }
+    
+    .guide-intro h2:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background: var(--gold-gradient);
+    }
+    
+    .guide-intro p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+      line-height: 1.7;
+    }
+    
+    .stat-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+    }
+    
+    .stat-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: var(--transition);
+      border-top: 3px solid var(--gold-primary);
+    }
+    
+    .stat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-bottom: 0.5rem;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .stat-description {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+    
+    .guide-section {
+      margin: 5rem 0;
+      padding: 2rem;
+      background-color: var(--white);
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .section-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: var(--dark);
+      position: relative;
+      z-index: 2;
+    }
+    
+    .section-title:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background: var(--gold-gradient);
+    }
+    
+    .section-icon {
+      font-size: 2rem;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      margin-left: auto;
+      box-shadow: var(--shadow-gold);
+    }
+    
+    .guide-section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+    
+    .info-box {
+      background-color: var(--gray-light);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--gold-primary);
+    }
+    
+    .info-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .feature-list {
+      list-style: none;
+    }
+    
+    .feature-list li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .feature-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .types-of-gold-iras {
+      margin: 2.5rem 0;
+    }
+    
+    .types-of-gold-iras h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .ira-types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .ira-type-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .ira-type-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .ira-type-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    .ira-type-card ul {
+      list-style: none;
+    }
+    
+    .ira-type-card ul li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .ira-type-card ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+    
+    .benefit-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .benefit-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .benefit-card:hover .benefit-icon {
+      transform: scale(1.1);
+    }
+    
+    .benefit-icon {
+      font-size: 2rem;
+      width: 70px;
+      height: 70px;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: var(--transition);
+      box-shadow: var(--shadow-gold);
+    }
+    
+    .benefit-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .benefit-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    
+    .benefit-highlight {
+      background-color: rgba(212, 175, 55, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: auto;
+    }
+    
+    .highlight-label {
+      font-weight: 600;
+      color: var(--gold-dark);
+      margin-right: 0.5rem;
+    }
+    
+    .expert-quote {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      margin: 3rem 0;
+      position: relative;
+    }
+    
+    .quote-mark {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      font-size: 3rem;
+      color: var(--gold-primary);
+      opacity: 0.5;
+    }
+    
+    .quote-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+      font-style: italic;
+    }
+    
+    .quote-author {
+      text-align: right;
+      font-weight: 500;
+      color: var(--gold-light);
+    }
+    
+    .metals-grid {
+      margin: 2.5rem 0;
+    }
+    
+    .metal-type {
+      background-color: var(--white);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    
+    .metal-type h3 {
+      background: var(--dark-gradient);
+      color: var(--white);
+      padding: 1.2rem;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .metal-symbol {
+      background: var(--gold-gradient);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      color: var(--dark);
+      font-weight: 700;
+    }
+    
+    .eligible-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+    
+    .product-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .product-image {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 1rem;
+      background-color: var(--gray-light);
+    }
+    
+    .product-details h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .product-details p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+    
+    .product-note {
+      font-size: 0.8rem;
+      color: var(--gold-dark);
+      font-style: italic;
+    }
+    
+    .metals-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+    }
+    
+    .half-width {
+      width: 100%;
+    }
+    
+    .eligible-products-compact {
+      padding: 1.5rem;
+    }
+    
+    .eligible-products-compact ul {
+      list-style: none;
+    }
+    
+    .eligible-products-compact ul li {
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 0.8rem;
+    }
+    
+    .eligible-products-compact ul li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .ineligible-notice {
+      background-color: #fff1f0;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 2.5rem 0;
+      border-left: 4px solid var(--red-accent);
+    }
+    
+    .ineligible-notice h3 {
+      color: var(--red-accent);
+      margin-bottom: 1.5rem;
+    }
+    
+    .ineligible-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .ineligible-item {
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .ineligible-icon {
+      color: var(--red-accent);
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    
+    .ineligible-detail h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .ineligible-detail p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    .metals-allocation {
+      background-color: var(--gray-light);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    
+    .metals-allocation h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .chart-visualization {
+      display: flex;
+      height: 50px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    
+    .chart-segment {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dark);
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    
+    .chart-segment:hover {
+      opacity: 0.9;
+    }
+    
+    .chart-explanation {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .chart-explanation p {
+      font-size: 1rem;
+      color: #555;
+    }
+    
+    .process-timeline {
+      margin: 2.5rem 0;
+    }
+    
+    .timeline-step {
+      display: flex;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    
+    .timeline-step:not(:last-child):before {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: 25px;
+      width: 2px;
+      height: calc(100% - 60px);
+      background-color: var(--gold-light);
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-right: 1.5rem;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-gold);
+    }
+    
+    .step-content {
+      flex: 1;
+    }
+    
+    .step-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .step-content p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    
+    .action-tip {
+      background-color: rgba(212, 175, 55, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    .funding-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .funding-option {
+      background-color: var(--white);
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .funding-option:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .funding-option h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      color: var(--dark);
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    .investment-strategy-box {
+      background-color: var(--gray-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+    
+    .investment-strategy-box h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .investment-strategy-box ul {
+      list-style: none;
+    }
+    
+    .investment-strategy-box li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    
+    .investment-strategy-box li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .storage-options-preview {
+      background-color: var(--gray-light);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    
+    .learn-more-link {
+      display: inline-block;
+      color: var(--gold-dark);
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      transition: var(--transition);
+    }
+    
+    .learn-more-link:hover {
+      color: var(--gold-primary);
+      transform: translateX(5px);
+    }
+    
+    .setup-time-estimate {
+      margin: 3rem 0;
+      background-color: var(--gray-light);
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+    
+    .setup-time-estimate h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .timeline-visual {
+      position: relative;
+      padding: 2rem 0;
+    }
+    
+    .timeline-marker {
+      position: absolute;
+      transform: translateX(-50%);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--dark);
+    }
+    
+    .timeline-bar {
+      height: 30px;
+      background-color: #eee;
+      border-radius: 15px;
+      overflow: hidden;
+      display: flex;
+    }
+    
+    .timeline-segment {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+    
+    .timeline-segment:nth-child(1) {
+      background-color: var(--gold-primary);
+      color: var(--dark);
+    }
+    
+    .timeline-segment:nth-child(2) {
+      background-color: var(--gold-dark);
+      color: var(--white);
+    }
+    
+    .timeline-segment:nth-child(3) {
+      background-color: var(--dark);
+      color: var(--white);
+    }
+    
+    .timeline-segment:hover {
+      opacity: 0.9;
+    }
+    
+    .timeline-note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+    
+    .expert-help-banner {
+      background: var(--gold-gradient);
+      border-radius: 15px;
+      padding: 2.5rem;
+      margin: 3rem 0;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .expert-help-banner h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .expert-help-banner p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--dark);
+    }
+    
+    .tax-comparison {
+      margin: 2.5rem 0;
+    }
+    
+    .tax-comparison h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .tax-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .tax-table th, .tax-table td {
+      text-align: left;
+      padding: 1.2rem;
+      border-bottom: 1px solid var(--gray-medium);
+    }
+    
+    .tax-table th {
+      background-color: var(--dark);
+      color: var(--white);
+      font-weight: 500;
+    }
+    
+    .tax-table tr:nth-child(even) {
+      background-color: rgba(212, 175, 55, 0.05);
+    }
+    
+    .tax-table tr:hover {
+      background-color: rgba(212, 175, 55, 0.1);
+    }
+    
+    .tax-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .table-notes {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 1rem;
+    }
+    
+    .table-notes p {
+      margin-bottom: 0.5rem;
+    }
+    
+    .tax-scenarios {
+      margin: 3rem 0;
+    }
+    
+    .tax-scenarios h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .scenario-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .scenario-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .scenario-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .scenario-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    .scenario-example p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      color: #444;
+    }
+    
+    .tax-strategies {
+      margin: 3rem 0;
+    }
+    
+    .tax-strategies h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .strategy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .strategy-item {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .strategy-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .strategy-item h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    .strategy-item p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    
+    .strategy-item ul {
+      list-style: none;
+    }
+    
+    .strategy-item ul li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 0.95rem;
+    }
+    
+    .strategy-item ul li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .disclaimer-box {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    .disclaimer-box h4 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .fee-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+    
+    .fee-type {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .fee-type:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .fee-type h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .fee-range {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-bottom: 1rem;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .fee-type p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    
+    .fee-tip {
+      background-color: rgba(212, 175, 55, 0.1);
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    .fee-comparison {
+      background-color: var(--gray-light);
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    .fee-comparison-section {
+      margin: 3rem 0;
+    }
+    
+    .fee-comparison-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+      text-align: center;
+    }
+    
+    .fee-comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .fee-comparison-table th, .fee-comparison-table td {
+      text-align: center;
+      padding: 1rem;
+      border-bottom: 1px solid var(--gray-medium);
+    }
+    
+    .fee-comparison-table th {
+      background-color: var(--dark);
+      color: var(--white);
+      font-weight: 500;
+    }
+    
+    .fee-comparison-table tr:hover {
+      background-color: rgba(212, 175, 55, 0.05);
+    }
+    
+    .fee-comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .total-row {
+      background-color: var(--gray-light);
+      font-weight: 600;
+    }
+    
+    .fee-impact-visualization {
+      margin: 2.5rem 0;
+      text-align: center;
+    }
+    
+    .fee-impact-visualization h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .fee-impact-chart {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 3rem;
+      height: 300px;
+      margin: 2rem 0;
+    }
+    
+    .impact-bar {
+      width: 120px;
+      position: relative;
+      border-radius: 8px 8px 0 0;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    
+    .fee-segment {
+      background-color: var(--red-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .value-segment {
+      background-color: var(--green-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .chart-labels {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 1rem;
+    }
+    
+    .chart-labels span {
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--dark);
+    }
+    
+    .impact-note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 1rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .fee-reduction-tips {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+      border-top: 3px solid var(--gold-primary);
+    }
+    
+    .fee-reduction-tips h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .fee-reduction-tips ol {
+      padding-left: 1.5rem;
+    }
+    
+    .fee-reduction-tips li {
+      margin-bottom: 1rem;
+      padding-left: 0.5rem;
+      color: #444;
+    }
+    
+    .fee-reduction-tips strong {
+      color: var(--dark);
+    }
+    
+    .depository-overview {
+      margin: 2.5rem 0;
+    }
+    
+    .depository-overview h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .depository-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .depository-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .depository-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .depository-image {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      background-color: var(--gray-light);
+    }
+    
+    .depository-card h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    .depository-details p {
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    
+    .storage-types {
+      margin: 3rem 0;
+    }
+    
+    .storage-types h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .storage-comparison {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+    
+    .storage-option {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .storage-option:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .storage-option h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+      text-align: center;
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    .storage-pros-cons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .pros h5, .cons h5 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .pros h5 {
+      color: var(--green-accent);
+    }
+    
+    .cons h5 {
+      color: var(--red-accent);
+    }
+    
+    .pros ul, .cons ul {
+      list-style: none;
+    }
+    
+    .pros ul li, .cons ul li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 0.95rem;
+    }
+    
+    .pros ul li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--green-accent);
+      font-weight: bold;
+    }
+    
+    .cons ul li:before {
+      content: "✗";
+      position: absolute;
+      left: 0;
+      color: var(--red-accent);
+      font-weight: bold;
+    }
+    
+    .who-should-choose {
+      background-color: var(--gray-light);
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+    
+    .storage-security {
+      margin: 3rem 0;
+    }
+    
+    .storage-security h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .security-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .security-feature {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+    
+    .security-feature:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--gold-primary);
+      flex-shrink: 0;
+    }
+    
+    .feature-details h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .feature-details ul {
+      list-style: none;
+    }
+    
+    .feature-details ul li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 0.95rem;
+    }
+    
+    .feature-details ul li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .offshore-storage {
+      margin: 3rem 0;
+      background-color: #f2f7fd;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+    
+    .offshore-storage h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--blue-accent);
+    }
+    
+    .offshore-overview p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+    
+    .offshore-considerations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .consideration {
+      background-color: var(--white);
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    
+    .consideration h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      color: var(--blue-accent);
+    }
+    
+    .consideration p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0;
+    }
+    
+    .international-locations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .location-option {
+      background-color: var(--white);
+      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: var(--transition);
+    }
+    
+    .location-option:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .location-option h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      color: var(--dark);
+    }
+    
+    .location-option p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0;
+    }
+    
+    .market-overview {
+      margin: 2rem 0;
+    }
+    
+    .market-overview p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+    
+    .current-factors {
+      margin: 3rem 0;
+    }
+    
+    .current-factors h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .factor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .market-factor {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+    
+    .market-factor:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .factor-icon {
+      font-size: 2rem;
+      width: 60px;
+      height: 60px;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 1.5rem;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-gold);
+    }
+    
+    .factor-details {
+      flex: 1;
+    }
+    
+    .factor-details h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .factor-details p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    
+    .factor-stat {
+      background-color: rgba(212, 175, 55, 0.1);
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    .price-projections {
+      margin: 3rem 0;
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+    
+    .price-projections h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+      text-align: center;
+    }
+    
+    .analyst-projections {
+      margin: 2rem 0;
+    }
+    
+    .projections-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .projections-table th, .projections-table td {
+      text-align: left;
+      padding: 1rem;
+      border-bottom: 1px solid var(--gray-medium);
+    }
+    
+    .projections-table th {
+      background-color: var(--dark);
+      color: var(--white);
+      font-weight: 500;
+    }
+    
+    .projections-table tr:hover {
+      background-color: rgba(212, 175, 55, 0.05);
+    }
+    
+    .projections-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .projections-note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 1rem;
+      text-align: center;
+      font-style: italic;
+    }
+    
+    .historical-context {
+      background-color: var(--gray-light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    
+    .historical-context h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .historical-context ul {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+    
+    .historical-context ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 0;
+      font-size: 0.95rem;
+      display: flex;
+      justify-content: space-between;
+      max-width: 400px;
+    }
+    
+    .investment-strategies {
+      margin: 3rem 0;
+    }
+    
+    .investment-strategies h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    
+    .strategy-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .strategy-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .strategy-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .strategy-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+      text-align: center;
+      border-bottom: 2px solid var(--gold-light);
+      padding-bottom: 0.5rem;
+    }
+    
+    .strategy-details p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      color: #444;
+    }
+    
+    .expert-insight {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    
+    .expert-insight blockquote {
+      font-style: italic;
+      margin: 0;
+      padding: 0 2rem;
+      position: relative;
+    }
+    
+    .expert-insight blockquote:before {
+      content: "\201C";
+      font-size: 4rem;
+      position: absolute;
+      left: 0;
+      top: -1rem;
+      color: var(--gold-primary);
+      opacity: 0.5;
+    }
+    
+    .expert-insight blockquote p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+    
+    .expert-insight cite {
+      display: block;
+      text-align: right;
+      font-style: normal;
+      color: var(--gold-light);
+    }
+    
+    .lead-form-section {
+      background: var(--dark-gradient);
+      color: var(--white);
+      padding: 3rem 2rem;
+      border-radius: 15px;
+      box-shadow: var(--shadow-lg);
+      margin: 4rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .lead-form-section:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/api/placeholder/1200/600');
+      background-size: cover;
+      opacity: 0.05;
+      z-index: 0;
+    }
+    
+    .lead-form-container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .lead-form-container h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .lead-form-container p {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    
+    .kit-includes {
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .kit-includes h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: var(--gold-light);
+    }
+    
+    .kit-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .kit-item {
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .item-icon {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      color: var(--gold-primary);
+      flex-shrink: 0;
+    }
+    
+    .item-details h5 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--white);
+    }
+    
+    .item-details p {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .form-control {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-control label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: rgba(255,255,255,0.1);
+      color: var(--white);
+      transition: var(--transition);
+    }
+    
+    .form-control input:focus,
+    .form-control select:focus,
+    .form-control textarea:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25);
+    }
+    
+    .form-control input::placeholder,
+    .form-control textarea::placeholder {
+      color: rgba(255,255,255,0.5);
+    }
+    
+    .form-privacy {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    .form-privacy input {
+      margin-right: 0.5rem;
+      margin-top: 0.2rem;
+    }
+    
+    .form-privacy label {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    
+    .form-privacy a {
+      color: var(--gold-primary);
+      text-decoration: none;
+    }
+    
+    .form-submit {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .form-submit button {
+      background: var(--gold-gradient);
+      color: var(--dark);
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 15px rgba(165, 126, 26, 0.4);
+    }
+    
+    .form-submit button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(165, 126, 26, 0.5);
+    }
+    
+    .form-guarantee {
+      display: flex;
+      align-items: flex-start;
+      background-color: rgba(255,255,255,0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    
+    .guarantee-icon {
+      font-size: 2rem;
+      margin-right: 1.5rem;
+      color: var(--gold-primary);
+      flex-shrink: 0;
+    }
+    
+    .guarantee-details h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--gold-light);
+    }
+    
+    .guarantee-details ul {
+      list-style: none;
+    }
+    
+    .guarantee-details ul li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 0.95rem;
+    }
+    
+    .guarantee-details ul li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .faq-bonus {
+      margin: 4rem 0;
+    }
+    
+    .expert-faq {
+      margin-top: 2rem;
+    }
+    
+    .faq-item {
+      background-color: var(--white);
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    
+    .faq-item:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .faq-question {
+      padding: 1.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--dark);
+      position: relative;
+    }
+    
+    .faq-question:after {
+      content: "+";
+      font-size: 1.5rem;
+      color: var(--gold-primary);
+    }
+    
+    .faq-question.active:after {
+      content: "−";
+    }
+    
+    .faq-question:hover {
+      background-color: rgba(212, 175, 55, 0.05);
+    }
+    
+    .faq-answer {
+      padding: 0 1.5rem 1.5rem;
+      color: #444;
+      display: none;
+    }
+    
+    .faq-answer p {
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+    
+    .faq-answer ol, .faq-answer ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+    
+    .faq-answer li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: #f8f8f8;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .comparison-item {
+      background-color: var(--white);
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .comparison-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .comparison-item ul {
+      list-style: none;
+    }
+    
+    .comparison-item ul li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.5rem;
+      position: relative;
+      font-size: 0.95rem;
+    }
+    
+    .comparison-item ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--gold-primary);
+      font-weight: bold;
+    }
+    
+    .conclusion-section {
+      background-color: var(--white);
+      padding: 3rem 2rem;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+      margin: 4rem 0;
+    }
+    
+    .conclusion-section .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .action-steps {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    
+    .step-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-right: 1.5rem;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-gold);
+    }
+    
+    .step-content {
+      flex: 1;
+    }
+    
+    .step-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .step-content p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    
+    .final-cta {
+      background: var(--gold-gradient);
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 3rem;
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .final-cta h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .final-cta p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--dark);
+    }
+    
+    footer {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 3rem 2rem 1rem;
+      margin-top: 5rem;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .footer-column h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    .footer-column h4:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--gold-primary);
+    }
+    
+    .footer-column ul {
+      list-style: none;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-column a {
+      color: #aaa;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    .footer-column a:hover {
+      color: var(--gold-primary);
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    
+    .disclaimer {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      color: #888;
+    }
+    
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    
+    .animated-element {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    .animated-element.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Ribbon effect for important sections */
+    .ribbon-container {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .ribbon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--gold-primary);
+      color: var(--dark);
+      padding: 0.5rem 2rem;
+      font-weight: 600;
+      font-size: 0.8rem;
+      transform: translateY(-50%) rotate(45deg) translateX(40%);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 200px;
+      text-align: center;
+      z-index: 2;
+    }
+    
+    /* Progress bar */
+    .reading-progress-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background-color: transparent;
+      z-index: 101;
+    }
+    
+    .reading-progress-bar {
+      height: 100%;
+      background: var(--gold-gradient);
+      width: 0%;
+      transition: width 0.2s ease;
+    }
+    
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--gold-gradient);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: var(--dark);
+      box-shadow: var(--shadow-lg);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 99;
+    }
+    
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .back-to-top:hover {
+      transform: translateY(-5px);
+    }
+    
+    /* Testimonial section */
+    .testimonials-section {
+      margin: 4rem 0;
+    }
+    
+    .testimonials-slider {
+      display: flex;
+      overflow-x: auto;
+      padding: 2rem 0;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      gap: 2rem;
+    }
+    
+    .testimonial-slide {
+      min-width: 350px;
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      scroll-snap-align: start;
+      position: relative;
+    }
+    
+    .testimonial-slide:before {
+      content: "\201C";
+      font-size: 4rem;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      color: var(--gold-primary);
+      opacity: 0.2;
+    }
+    
+    .testimonial-content {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: #444;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+    
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--gray-medium);
+      margin-right: 1rem;
+    }
+    
+    .author-details h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+      color: var(--dark);
+    }
+    
+    .author-details p {
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 0;
+    }
+    
+    /* Trust badges */
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .trust-badge {
+      background-color: var(--white);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: var(--transition);
+    }
+    
+    .trust-badge:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .trust-badge img {
+      max-width: 80px;
+      margin-bottom: 1rem;
+    }
+    
+    .trust-badge h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .trust-badge p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 1200px) {
+      .guide-header h1 {
+        font-size: 2.8rem;
+      }
+      
+      .guide-header p {
+        font-size: 1.2rem;
+      }
+      
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .guide-header h1 {
+        font-size: 2.5rem;
+      }
+      
+      .guide-header p {
+        font-size: 1.1rem;
+      }
+      
+      .stat-value {
+        font-size: 2.2rem;
+      }
+      
+      .expert-quote .quote-text {
+        font-size: 1.1rem;
+      }
+      
+      .section-title {
+        font-size: 1.7rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .guide-header {
+        padding: 4rem 1.5rem;
+      }
+      
+      .guide-header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .guide-header p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+      
+      .container {
+        padding: 1.5rem;
+      }
+      
+      .guide-navigation {
+        overflow-x: auto;
+      }
+      
+      .guide-nav-links {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+      }
+      
+      .guide-section {
+        padding: 1.5rem;
+      }
+      
+      .benefit-card, .ira-type-card, .scenario-card, .strategy-item, .fee-type {
+        padding: 1.2rem;
+      }
+      
+      .section-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .mobile-menu-button {
+        display: block;
+      }
+      
+      .fee-impact-chart {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
+      }
+      
+      .impact-bar {
+        width: 80%;
+        height: 200px;
+      }
+      
+      .chart-labels {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .timeline-step {
+        flex-direction: column;
+      }
+      
+      .step-number {
+        margin-bottom: 1rem;
+      }
+      
+      .timeline-step:not(:last-child):before {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .guide-header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .cta-primary, .cta-secondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+      }
+      
+      .lead-form-container h3 {
+        font-size: 1.7rem;
+      }
+      
+      .kit-items {
+        grid-template-columns: 1fr;
+      }
+      
+      .section-title {
+        font-size: 1.5rem;
+      }
+      
+      .guide-section {
+        padding: 1.2rem;
+      }
+      
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .kit-includes {
+        padding: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="reading-progress-container">
+    <div class="reading-progress-bar" id="reading-progress"></div>
+  </div>
+
+  <div class="gold-price-ticker">
+    <div class="ticker-item">
+      <strong>Gold:</strong> $2,321.45/oz <span class="price-up">↑ $12.30 (0.53%)</span>
+    </div>
+    <div class="ticker-item">
+      <strong>Silver:</strong> $27.15/oz <span class="price-up">↑ $0.42 (1.57%)</span>
+    </div>
+    <div class="ticker-item">
+      <strong>Platinum:</strong> $968.30/oz <span class="price-down">↓ $3.15 (0.32%)</span>
+    </div>
+    <div class="ticker-item">
+      <strong>DOW:</strong> 34,592 <span class="price-down">↓ 217 (0.63%)</span>
+    </div>
+    <div class="ticker-item">
+      <strong>Updated:</strong> May 8, 2025 10:23 AM EST
+    </div>
+  </div>
+
+  <div class="nav-container">
+    <nav>
+      <a href="index.html" class="logo">Gold<span>InvestorGuide</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="guide.html" class="active">Gold IRA Guide</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="mobile-menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+
+  <header class="guide-header">
+    <div class="header-content fade-in">
+      <h1>The <span>Ultimate Gold IRA</span> Guide (2025)</h1>
+      <p>Protect your retirement from inflation, market crashes, and currency devaluation with physical precious metals. Discover how the wealthy preserve their wealth during economic uncertainty.</p>
+      <a href="#lead-form" class="cta-primary">Get My Free Gold IRA Kit</a>
+      
+      <div class="trust-badges">
+        <div class="badge">
+          <img src="/api/placeholder/20/20" alt="Verified" /> Trusted by 10,000+ Investors
+        </div>
+        <div class="badge">
+          <img src="/api/placeholder/20/20" alt="Secure" /> Independent Research
+        </div>
+        <div class="badge">
+          <img src="/api/placeholder/20/20" alt="Certified" /> BBB Accredited
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="guide-navigation" id="guide-nav">
+      <ul class="guide-nav-links">
+        <li><a href="#what-is-gold-ira" class="nav-link">What Is a Gold IRA?</a></li>
+        <li><a href="#benefits" class="nav-link">Key Benefits</a></li>
+        <li><a href="#eligible-metals" class="nav-link">Eligible Metals</a></li>
+        <li><a href="#setup-process" class="nav-link">Setup Process</a></li>
+        <li><a href="#tax-advantages" class="nav-link">Tax Advantages</a></li>
+        <li><a href="#costs-fees" class="nav-link">Costs & Fees</a></li>
+        <li><a href="#storage-options" class="nav-link">Storage Options</a></li>
+        <li><a href="#market-outlook" class="nav-link">Market Outlook</a></li>
+      </ul>
+    </div>
+    
+    <div class="guide-intro ribbon-container animated-element">
+      <div class="ribbon">NEW FOR 2025</div>
+      <div class="guide-intro-content">
+        <h2>Why This Guide Matters More Than Ever In 2025</h2>
+        <p>With inflation reaching 7.3% in April 2025, stock market volatility increasing, and national debt surpassing $39 trillion, Americans are increasingly concerned about the long-term security of their retirement savings. Traditional paper-based assets alone may no longer provide adequate protection in this economic environment.</p>
+        
+        <p>Gold IRAs have surged in popularity as investors seek to safeguard their wealth against currency devaluation, market corrections, and economic uncertainty. This comprehensive guide will walk you through everything you need to know about establishing a Gold IRA, choosing the right provider, and making informed investment decisions.</p>
+        
+        <div class="stat-highlights">
+          <div class="stat-card">
+            <div class="stat-value">68%</div>
+            <div class="stat-description">of gold investors cite "wealth protection" as their primary motivation</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">237%</div>
+            <div class="stat-description">growth in Gold IRA openings since 2020</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">12-15%</div>
+            <div class="stat-description">recommended portfolio allocation to precious metals by financial experts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section id="what-is-gold-ira" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">What Is a Gold IRA?</h2>
+        <div class="section-icon">🏦</div>
+      </div>
+      
+      <p>A Gold IRA (Individual Retirement Account) is a specialized self-directed IRA that allows you to own physical precious metals within a tax-advantaged retirement account. Unlike conventional IRAs limited to paper assets (stocks, bonds, mutual funds), a Gold IRA enables you to hold tangible, physical gold and other precious metals as part of your retirement strategy.</p>
+      
+      <div class="info-box">
+        <h3>Gold IRA at a Glance</h3>
+        <ul class="feature-list">
+          <li><strong>Official Name:</strong> Self-Directed Precious Metals IRA</li>
+          <li><strong>Structure:</strong> IRS-approved custodian manages account; metals stored in approved depositories</li>
+          <li><strong>Tax Treatment:</strong> Same options as traditional IRAs (Traditional or Roth options)</li>
+          <li><strong>Contribution Limits:</strong> $7,500 annually ($8,500 for those 50+) as of 2025</li>
+          <li><strong>Required Minimum Distributions:</strong> Begin at age 73 (for Traditional Gold IRAs)</li>
+        </ul>
+      </div>
+      
+      <div class="types-of-gold-iras">
+        <h3>Types of Gold IRAs</h3>
+        
+        <div class="ira-types-grid">
+          <div class="ira-type-card">
+            <h4>Traditional Gold IRA</h4>
+            <ul>
+              <li>Contributions may be tax-deductible</li>
+              <li>Taxes paid upon withdrawal (retirement)</li>
+              <li>10% early withdrawal penalty before age 59½</li>
+              <li>RMDs begin at age 73</li>
+            </ul>
+          </div>
+          
+          <div class="ira-type-card">
+            <h4>Roth Gold IRA</h4>
+            <ul>
+              <li>Contributions made with after-tax dollars</li>
+              <li>Qualified withdrawals are tax-free</li>
+              <li>No RMDs during account holder's lifetime</li>
+              <li>Income limits apply for eligibility</li>
+            </ul>
+          </div>
+          
+          <div class="ira-type-card">
+            <h4>SEP Gold IRA</h4>
+            <ul>
+              <li>For self-employed individuals and small business owners</li>
+              <li>Higher contribution limits (up to $69,000 in 2025)</li>
+              <li>Tax-deductible contributions for employers</li>
+              <li>Similar tax treatment to Traditional IRAs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="benefits" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">Key Benefits of Gold IRAs</h2>
+        <div class="section-icon">💰</div>
+      </div>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h3 class="benefit-title">Wealth Protection</h3>
+          <p>Physical gold provides a tangible hedge against inflation, currency devaluation, and economic uncertainty. When paper currencies lose value, gold historically maintains or increases its purchasing power.</p>
+          <div class="benefit-highlight">
+            <span class="highlight-label">Insight:</span>
+            <span class="highlight-text">Gold has maintained its value over thousands of years while countless currencies have collapsed.</span>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">📊</div>
+          <h3 class="benefit-title">Portfolio Diversification</h3>
+          <p>Gold typically moves independently or inversely to stock market performance, providing crucial balance during market downturns when traditional investments may lose value.</p>
+          <div class="benefit-highlight">
+            <span class="highlight-label">Fact:</span>
+            <span class="highlight-text">During the 2008 financial crisis, gold gained 5.5% while the S&P 500 lost 37%.</span>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🔒</div>
+          <h3 class="benefit-title">Tax Advantages</h3>
+          <p>Enjoy the same tax benefits as traditional retirement accounts while holding physical precious metals. Choose between tax-deferred growth (Traditional) or tax-free qualified withdrawals (Roth).</p>
+          <div class="benefit-highlight">
+            <span class="highlight-label">Strategy:</span>
+            <span class="highlight-text">A Traditional Gold IRA can provide immediate tax deductions while securing retirement with precious metals.</span>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🔄</div>
+          <h3 class="benefit-title">Counterparty Risk Reduction</h3>
+          <p>Physical gold eliminates the counterparty risk associated with paper assets, which depend on the promise of governments, banks, or corporations to honor their obligations.</p>
+          <div class="benefit-highlight">
+            <span class="highlight-label">Consideration:</span>
+            <span class="highlight-text">Physical gold cannot go bankrupt, default, or be printed to worthlessness.</span>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🌊</div>
+          <h3 class="benefit-title">Liquidity</h3>
+          <p>Gold maintains global liquidity and can be bought or sold 24/7 worldwide, unlike many other investments that are restricted to specific market hours or locations.</p>
+          <div class="benefit-highlight">
+            <span class="highlight-label">Advantage:</span>
+            <span class="highlight-text">Gold can be quickly converted to cash in virtually any country on earth.</span>
+          </div>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">📈</div>
+          <h3 class="benefit-title">Growth Potential</h3>
+          <p>Beyond wealth preservation, gold has demonstrated substantial growth potential, particularly during periods of economic stress or currency devaluation.</p>
+          <div class="benefit-highlight">
+            <span class="highlight-label">Performance:</span>
+            <span class="highlight-text">Gold has outperformed many traditional investments over the past 20 years.</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="expert-quote">
+        <div class="quote-mark">❝</div>
+        <p class="quote-text">In an era of unprecedented money printing and financial experimentation, physical gold in a tax-advantaged account represents one of the most prudent safeguards available to investors concerned about preserving their purchasing power.</p>
+        <div class="quote-author">— James Rickards, Economist and Author of "The New Great Depression"</div>
+      </div>
+    </section>
+
+    <div class="testimonials-section animated-element">
+      <h2 class="section-title">What Our Clients Are Saying</h2>
+      
+      <div class="testimonials-slider">
+        <div class="testimonial-slide">
+          <p class="testimonial-content">After researching Gold IRAs for months, this guide finally gave me the clarity I needed. I rolled over my 401(k) to a Gold IRA last month, and the process was seamless thanks to the step-by-step instructions here.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-details">
+              <h4>Michael R.</h4>
+              <p>Retired Teacher, Dallas TX</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <p class="testimonial-content">The tax advantages section was particularly helpful. I had no idea I could convert my Traditional IRA to a Roth Gold IRA and potentially enjoy tax-free growth. The comparison tables made the decision easy.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-details">
+              <h4>Jennifer L.</h4>
+              <p>Business Owner, Chicago IL</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <p class="testimonial-content">With inflation eating away at my retirement savings, I needed a solution. This guide helped me understand the role of gold as a wealth preserver. I've now allocated 15% of my portfolio to precious metals.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-details">
+              <h4>Robert T.</h4>
+              <p>Engineer, San Diego CA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="eligible-metals" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">IRS-Approved Metals for Your Gold IRA</h2>
+        <div class="section-icon">⚜️</div>
+      </div>
+      
+      <p>The IRS has strict requirements regarding which precious metals can be held in a Gold IRA. Only certain coins, bars, and rounds meeting specific purity standards are eligible.</p>
+      
+      <div class="metals-grid">
+        <div class="metal-type">
+          <h3><span class="metal-symbol">Au</span> Gold (99.5% pure minimum)</h3>
+          <div class="eligible-products">
+            <div class="product-card">
+              <img src="/api/placeholder/100/100" alt="American Gold Eagle" class="product-image">
+              <div class="product-details">
+                <h4>American Gold Eagle</h4>
+                <p>Official U.S. gold bullion coin, contains 1oz of gold</p>
+                <span class="product-note">Special IRS exception: allowed despite 91.67% purity</span>
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <img src="/api/placeholder/100/100" alt="Canadian Gold Maple Leaf" class="product-image">
+              <div class="product-details">
+                <h4>Canadian Gold Maple Leaf</h4>
+                <p>99.99% pure gold coin produced by Royal Canadian Mint</p>
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <img src="/api/placeholder/100/100" alt="Gold Bars" class="product-image">
+              <div class="product-details">
+                <h4>Gold Bars & Rounds</h4>
+                <p>Must be produced by COMEX/NYMEX approved refiners, 99.5%+ pure</p>
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <img src="/api/placeholder/100/100" alt="Other Gold Coins" class="product-image">
+              <div class="product-details">
+                <h4>Other Eligible Gold Coins</h4>
+                <ul>
+                  <li>Australian Gold Kangaroo</li>
+                  <li>Austrian Gold Philharmonic</li>
+                  <li>British Gold Britannia (2013+)</li>
+                  <li>Chinese Gold Panda</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metal-type">
+          <h3><span class="metal-symbol">Ag</span> Silver (99.9% pure minimum)</h3>
+          <div class="eligible-products-compact">
+            <div class="product-list">
+              <ul>
+                <li>American Silver Eagle</li>
+                <li>Canadian Silver Maple Leaf</li>
+                <li>Australian Silver Kookaburra</li>
+                <li>Mexican Silver Libertad</li>
+                <li>COMEX/NYMEX approved silver bars & rounds (99.9%+ pure)</li>
+              </ul>
+            </div>
+            <img src="/api/placeholder/200/150" alt="Silver Products" class="products-image">
+          </div>
+        </div>
+        
+        <div class="metals-row">
+          <div class="metal-type half-width">
+            <h3><span class="metal-symbol">Pt</span> Platinum (99.95% pure minimum)</h3>
+            <div class="eligible-products-compact">
+              <ul>
+                <li>American Platinum Eagle</li>
+                <li>Canadian Platinum Maple Leaf</li>
+                <li>Australian Platinum Koala</li>
+                <li>Isle of Man Noble</li>
+                <li>Approved platinum bars & rounds (99.95%+ pure)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="metal-type half-width">
+            <h3><span class="metal-symbol">Pd</span> Palladium (99.95% pure minimum)</h3>
+            <div class="eligible-products-compact">
+              <ul>
+                <li>Canadian Palladium Maple Leaf</li>
+                <li>Russian Ballerina Palladium</li>
+                <li>Approved palladium bars & rounds (99.95%+ pure)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="ineligible-notice">
+        <h3>What's NOT Allowed in Gold IRAs</h3>
+        <div class="ineligible-items">
+          <div class="ineligible-item">
+            <div class="ineligible-icon">❌</div>
+            <div class="ineligible-detail">
+              <h4>Collectible/Rare Coins</h4>
+              <p>Numismatic, proof, or graded coins with value dependent on rarity/condition</p>
+            </div>
+          </div>
+          
+          <div class="ineligible-item">
+            <div class="ineligible-icon">❌</div>
+            <div class="ineligible-detail">
+              <h4>Pre-1933 Gold Coins</h4>
+              <p>Including Double Eagles and other historic U.S. coinage</p>
+            </div>
+          </div>
+          
+          <div class="ineligible-item">
+            <div class="ineligible-icon">❌</div>
+            <div class="ineligible-detail">
+              <h4>Swiss Francs, British Sovereigns, German Marks</h4>
+              <p>These historic gold coins don't meet IRS purity requirements</p>
+            </div>
+          </div>
+          
+          <div class="ineligible-item">
+            <div class="ineligible-icon">❌</div>
+            <div class="ineligible-detail">
+              <h4>Jewelry or Art Objects</h4>
+              <p>Regardless of gold content, these are considered collectibles</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="metals-allocation">
+        <h3>Recommended Precious Metals Allocation</h3>
+        <div class="allocation-chart">
+          <div class="chart-visualization">
+            <div class="chart-segment" style="width: 70%; background-color: var(--gold-primary)">70% Gold</div>
+            <div class="chart-segment" style="width: 20%; background-color: #C0C0C0">20% Silver</div>
+            <div class="chart-segment" style="width: 10%; background-color: #E5E4E2">10% Platinum/Palladium</div>
+          </div>
+          <div class="chart-explanation">
+            <p>Most precious metals experts recommend a balanced approach with gold as your primary holding, supplemented by silver and platinum/palladium for diversification.</p>
+            <p>Your optimal allocation may vary based on your risk tolerance, investment goals, and market outlook.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="expert-help-banner animated-element">
+      <h3>Need Help Choosing the Right Metals for Your Gold IRA?</h3>
+      <p>Our experts will guide you through the selection process and match you with a top-rated Gold IRA company that fits your unique needs.</p>
+      <a href="#lead-form" class="cta-primary">Get Free Expert Guidance</a>
+    </div>
+
+    <section id="setup-process" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">Setting Up Your Gold IRA: Step-by-Step</h2>
+        <div class="section-icon">📝</div>
+      </div>
+      
+      <div class="process-timeline">
+        <div class="timeline-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Choose a Gold IRA Company</h3>
+            <p>Select a reputable company that specializes in precious metals IRAs, comparing factors like reputation, fees, customer service, and educational resources.</p>
+            <div class="action-tip">
+              <strong>Action Tip:</strong> Review our <a href="reviews.html">Top 5 Gold IRA Companies</a> comparison to find your best match.
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Open Your Self-Directed IRA</h3>
+            <p>Complete the application with your chosen gold IRA company. They'll help establish your account with an IRS-approved custodian who will handle the administrative aspects of your IRA.</p>
+            <div class="action-tip">
+              <strong>Documents Needed:</strong> Government-issued photo ID, social security number, basic personal information, and beneficiary details.
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Fund Your Account</h3>
+            <p>You have three primary options for funding your new Gold IRA:</p>
+            <div class="funding-options">
+              <div class="funding-option">
+                <h4>IRA Transfer</h4>
+                <p>Direct movement of funds from an existing IRA to your new Gold IRA. Simplest method with no tax implications.</p>
+              </div>
+              <div class="funding-option">
+                <h4>401(k) Rollover</h4>
+                <p>Move funds from an employer-sponsored retirement plan (401(k), 403(b), TSP, etc.) to your Gold IRA. Can be done with previous employer plans or current plans if you qualify for an in-service distribution.</p>
+              </div>
+              <div class="funding-option">
+                <h4>Cash Contribution</h4>
+                <p>Make a direct cash contribution up to annual limits ($7,500 in 2025, $8,500 if you're 50+).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Select Your Precious Metals</h3>
+            <p>Work with your Gold IRA company to select IRS-approved precious metals based on your investment goals, budget, and market outlook.</p>
+            <div class="investment-strategy-box">
+              <h4>Investment Strategy Considerations:</h4>
+              <ul>
+                <li><strong>Capital Preservation:</strong> Favor established, widely-recognized bullion coins like American Gold Eagles or Canadian Maple Leafs</li>
+                <li><strong>Growth Potential:</strong> Consider a mix of gold and silver, as silver often outperforms during bull markets</li>
+                <li><strong>Maximum Diversification:</strong> Allocate across all four precious metals (gold, silver, platinum, palladium)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Complete the Purchase</h3>
+            <p>Your Gold IRA company will execute the metals purchase on your behalf once your account is funded. They'll coordinate with your custodian to ensure proper documentation.</p>
+            <div class="action-tip">
+              <strong>Pro Tip:</strong> Request a detailed purchase order showing exactly what you're buying, including quantity, metal type, weight, purity, and price.
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <h3>Arrange Secure Storage</h3>
+            <p>Your precious metals must be stored in an IRS-approved depository. Your Gold IRA company will coordinate shipping and storage arrangements.</p>
+            <div class="storage-options-preview">
+              <p>Storage options typically include Delaware Depository, Brink's Global Services, or International Depository Services with segregated or non-segregated storage plans.</p>
+              <a href="#storage-options" class="learn-more-link">Learn more about storage options →</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-step">
+          <div class="step-number">7</div>
+          <div class="step-content">
+            <h3>Receive Confirmation</h3>
+            <p>Once your metals are secured in the depository, you'll receive confirmation of the purchase and storage. Your custodian will provide regular account statements.</p>
+            <div class="action-tip">
+              <strong>Verification:</strong> Most depositories offer online verification systems where you can check your holdings status.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="setup-time-estimate">
+        <h3>Typical Timeline</h3>
+        <div class="timeline-visual">
+          <div class="timeline-marker" style="left: 0%">Day 1</div>
+          <div class="timeline-marker" style="left: 40%">Days 3-5</div>
+          <div class="timeline-marker" style="left: 70%">Days 7-10</div>
+          <div class="timeline-marker" style="left: 100%">Days 10-14</div>
+          
+          <div class="timeline-bar">
+            <div class="timeline-segment" style="width: 40%">Account Setup</div>
+            <div class="timeline-segment" style="width: 30%">Funds Transfer</div>
+            <div class="timeline-segment" style="width: 30%">Metals Purchase & Delivery</div>
+          </div>
+        </div>
+        <p class="timeline-note">Most Gold IRAs can be fully established within 2 weeks, though certain transfers may take up to 30 days depending on your current custodian.</p>
+      </div>
+    </section>
+    
+    <div class="trust-badges animated-element">
+      <div class="trust-badge">
+        <img src="/api/placeholder/80/80" alt="BBB A+ Rated">
+        <h4>BBB A+ Rated</h4>
+        <p>All recommended companies maintain top ratings</p>
+      </div>
+      
+      <div class="trust-badge">
+        <img src="/api/placeholder/80/80" alt="IRS Compliant">
+        <h4>IRS Compliant</h4>
+        <p>100% adherence to tax regulations</p>
+      </div>
+      
+      <div class="trust-badge">
+        <img src="/api/placeholder/80/80" alt="Segregated Storage">
+        <h4>Secure Storage</h4>
+        <p>Fully insured depositories only</p>
+      </div>
+      
+      <div class="trust-badge">
+        <img src="/api/placeholder/80/80" alt="Buyback Guarantee">
+        <h4>Buyback Programs</h4>
+        <p>Liquidity when you need it</p>
+      </div>
+    </div>
+    
+    <section id="tax-advantages" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">Tax Advantages & Considerations</h2>
+        <div class="section-icon">📊</div>
+      </div>
+      
+      <div class="tax-comparison">
+        <h3>Tax Treatment By Account Type</h3>
+        <table class="tax-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Traditional Gold IRA</th>
+              <th>Roth Gold IRA</th>
+              <th>Taxable Investment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Contributions</td>
+              <td>Tax-deductible*</td>
+              <td>After-tax dollars</td>
+              <td>After-tax dollars</td>
+            </tr>
+            <tr>
+              <td>Growth & Gains</td>
+              <td>Tax-deferred</td>
+              <td>Tax-free</td>
+              <td>Taxed annually (28% collectibles rate)</td>
+            </tr>
+            <tr>
+              <td>Withdrawals</td>
+              <td>Taxed as ordinary income</td>
+              <td>Tax-free (if qualified**)</td>
+              <td>No additional tax</td>
+            </tr>
+            <tr>
+              <td>Required Distributions</td>
+              <td>Yes, starting at age 73</td>
+              <td>No RMDs during owner's lifetime</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Early Withdrawal Penalty</td>
+              <td>10% penalty before age 59½***</td>
+              <td>10% penalty on earnings before age 59½***</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="table-notes">
+          <p>* Tax deduction may be limited if you or your spouse participate in an employer retirement plan</p>
+          <p>** Qualified Roth withdrawals require the account to be open for at least 5 years and you must be 59½ or older</p>
+          <p>*** Exceptions apply for disability, first-time home purchase, certain medical expenses, etc.</p>
+        </div>
+      </div>
+      
+      <div class="tax-scenarios">
+        <h3>Tax Advantage Scenarios</h3>
+        
+        <div class="scenario-cards">
+          <div class="scenario-card">
+            <h4>Scenario 1: Traditional Gold IRA</h4>
+            <div class="scenario-example">
+              <p><strong>Initial Investment:</strong> $100,000 IRA rollover</p>
+              <p><strong>Value After 20 Years:</strong> $400,000 (assuming 7.2% annual growth)</p>
+              <p><strong>Tax Savings Now:</strong> Up to $37,000 (assuming 37% tax bracket)</p>
+              <p><strong>Future Tax:</strong> Pay ordinary income tax rates on withdrawals</p>
+              <p><strong>Best For:</strong> Investors who expect to be in a lower tax bracket during retirement</p>
+            </div>
+          </div>
+          
+          <div class="scenario-card">
+            <h4>Scenario 2: Roth Gold IRA</h4>
+            <div class="scenario-example">
+              <p><strong>Initial Investment:</strong> $100,000 Roth conversion (paying taxes upfront)</p>
+              <p><strong>Value After 20 Years:</strong> $400,000 (assuming 7.2% annual growth)</p>
+              <p><strong>Tax Savings Now:</strong> None (pay taxes on conversion)</p>
+              <p><strong>Future Tax:</strong> $0 - completely tax-free withdrawals</p>
+              <p><strong>Best For:</strong> Investors who expect tax rates to increase or want tax-free growth</p>
+            </div>
+          </div>
+          
+          <div class="scenario-card">
+            <h4>Scenario 3: Taxable Investment</h4>
+            <div class="scenario-example">
+              <p><strong>Initial Investment:</strong> $100,000</p>
+              <p><strong>Value After 20 Years:</strong> $285,000 (assuming 7.2% annual growth, reduced by taxes)</p>
+              <p><strong>Tax Impact:</strong> Annual taxes on gains at 28% collectibles rate</p>
+              <p><strong>Future Tax:</strong> No additional tax on withdrawal</p>
+              <p><strong>Best For:</strong> Investors who need immediate access to their metals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tax-strategies">
+        <h3>Strategic Tax Considerations</h3>
+        
+        <div class="strategy-grid">
+          <div class="strategy-item">
+            <h4>Roth Conversion Strategy</h4>
+            <p>Consider converting existing Traditional IRAs to Roth Gold IRAs during years when:</p>
+            <ul>
+              <li>Your income is temporarily lower</li>
+              <li>Tax rates are historically favorable</li>
+              <li>You have offsetting deductions available</li>
+            </ul>
+            <p>This "pay taxes now" approach can provide decades of tax-free growth and completely tax-free withdrawals.</p>
+          </div>
+          
+          <div class="strategy-item">
+            <h4>Inherited Gold IRA Planning</h4>
+            <p>When including Gold IRAs in estate planning:</p>
+            <ul>
+              <li>Non-spouse beneficiaries must generally withdraw all assets within 10 years</li>
+              <li>Spouses can roll inherited IRAs into their own</li>
+              <li>Roth Gold IRAs offer significant advantages for heirs (tax-free inheritance)</li>
+            </ul>
+          </div>
+          
+          <div class="strategy-item">
+            <h4>Required Minimum Distribution (RMD) Planning</h4>
+            <p>For Traditional Gold IRAs, consider:</p>
+            <ul>
+              <li>You must begin taking RMDs at age 73 (as of 2025)</li>
+              <li>In-kind distributions are possible (taking actual metal)</li>
+              <li>Strategic liquidation of specific metals to satisfy RMDs</li>
+            </ul>
+          </div>
+          
+          <div class="strategy-item">
+            <h4>Tax-Efficient Metal Selection</h4>
+            <p>For tax efficiency across accounts:</p>
+            <ul>
+              <li>Hold silver in Roth accounts (higher growth potential, tax-free)</li>
+              <li>Hold gold in Traditional accounts (stability, tax-deferred)</li>
+              <li>Coordinate with overall investment strategy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="disclaimer-box">
+        <h4>Tax Disclaimer</h4>
+        <p>This information is general in nature and not intended as tax advice. Individual tax situations vary. Please consult with a qualified tax professional regarding your specific circumstances.</p>
+      </div>
+    </section>
+
+    <section id="costs-fees" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">Understanding Gold IRA Costs & Fees</h2>
+        <div class="section-icon">💲</div>
+      </div>
+      
+      <p>Gold IRAs typically involve several types of fees. Understanding these costs is essential for evaluating the long-term value of your investment and comparing providers.</p>
+      
+      <div class="fee-types">
+        <div class="fee-type">
+          <h3>One-Time Setup Fees</h3>
+          <div class="fee-range">$50-$300</div>
+          <p>Initial administrative fee to establish your account with the custodian.</p>
+          <div class="fee-tip">
+            <strong>Insider Tip:</strong> Many top Gold IRA companies will waive this fee for investments over $50,000.
+          </div>
+        </div>
+        
+        <div class="fee-type">
+          <h3>Annual Maintenance Fees</h3>
+          <div class="fee-range">$75-$300</div>
+          <p>Ongoing administrative costs for account maintenance, statements, tax reporting, etc.</p>
+          <div class="fee-tip">
+            <strong>Cost Control:</strong> Some custodians offer discounted multi-year payment options.
+          </div>
+        </div>
+        
+        <div class="fee-type">
+          <h3>Storage Fees</h3>
+          <div class="fee-range">$100-$300/year</div>
+          <p>Costs for secure storage of your precious metals in an IRS-approved depository.</p>
+          <div class="fee-comparison">
+            <strong>Segregated Storage:</strong> $150-$300/year<br>
+            <strong>Non-segregated Storage:</strong> $100-$150/year
+          </div>
+        </div>
+        
+        <div class="fee-type">
+          <h3>Insurance Costs</h3>
+          <div class="fee-range">Varies</div>
+          <p>Coverage for your metals against loss, damage, or theft.</p>
+          <div class="fee-tip">
+            <strong>Value Note:</strong> Often included in storage fees at no additional cost.
+          </div>
+        </div>
+      </div>
+      
+      <div class="fee-reduction-tips">
+        <h3>7 Ways to Minimize Your Gold IRA Fees</h3>
+        <ol>
+          <li><strong>Consolidate Accounts</strong> - Maintain a single larger account rather than multiple small ones to reduce duplicate fees</li>
+          <li><strong>Negotiate Fee Waivers</strong> - Many providers will waive setup fees or first-year maintenance fees for larger investments</li>
+          <li><strong>Choose Non-Segregated Storage</strong> - If comfortable with commingled storage, save significantly on annual storage costs</li>
+          <li><strong>Pay Multiple Years in Advance</strong> - Some custodians offer discounts for prepaying maintenance fees (e.g., 3 years for the price of 2)</li>
+          <li><strong>Select Companies with Flat-Fee Structures</strong> - Avoid percentage-based fees that increase as your metals appreciate</li>
+          <li><strong>Look for Buyback Guarantees</strong>
+            <li><strong>Look for Buyback Guarantees</strong> - Companies with guaranteed buyback programs can reduce your exit costs</li>
+          <li><strong>Transfer or Roll Over Larger Amounts</strong> - Making one large rollover is more cost-effective than multiple smaller ones</li>
+        </ol>
+      </div>
+      
+      <div class="fee-comparison-section">
+        <h3>Sample Fee Comparison: $100,000 Gold IRA (Annual Costs)</h3>
+        
+        <table class="fee-comparison-table">
+          <thead>
+            <tr>
+              <th>Fee Category</th>
+              <th>Company A (High-Fee)</th>
+              <th>Company B (Low-Fee)</th>
+              <th>10-Year Difference</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Annual Maintenance</strong></td>
+              <td>$250</td>
+              <td>$80</td>
+              <td>$1,700</td>
+            </tr>
+            <tr>
+              <td><strong>Storage (Segregated)</strong></td>
+              <td>$250</td>
+              <td>$150</td>
+              <td>$1,000</td>
+            </tr>
+            <tr>
+              <td><strong>Insurance</strong></td>
+              <td>$100</td>
+              <td>Included</td>
+              <td>$1,000</td>
+            </tr>
+            <tr>
+              <td><strong>Annual Total</strong></td>
+              <td>$600</td>
+              <td>$230</td>
+              <td>$3,700</td>
+            </tr>
+            <tr class="total-row">
+              <td><strong>10-Year Total</strong></td>
+              <td>$6,000</td>
+              <td>$2,300</td>
+              <td>$3,700</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="fee-impact-visualization">
+          <h4>Fee Impact on $100,000 Investment Over 20 Years</h4>
+          <div class="fee-impact-chart">
+            <div class="impact-bar high-fee" style="height: 80%">
+              <div class="fee-segment" style="height: 15%">Fees: $12,000</div>
+              <div class="value-segment" style="height: 85%">Final Value: $388,000</div>
+            </div>
+            <div class="impact-bar low-fee" style="height: 92%">
+              <div class="fee-segment" style="height: 5%">Fees: $4,600</div>
+              <div class="value-segment" style="height: 95%">Final Value: $395,400</div>
+            </div>
+          </div>
+          <div class="chart-labels">
+            <span>High-Fee Provider</span>
+            <span>Low-Fee Provider</span>
+          </div>
+          <p class="impact-note">Assumes 7.2% annual growth rate and consistent fee structure. Lower fees can preserve thousands of dollars of your retirement savings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="storage-options" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">Gold IRA Storage Options & Security</h2>
+        <div class="section-icon">🔒</div>
+      </div>
+      
+      <p>IRS regulations require that precious metals in an IRA be stored in an approved depository—you cannot store them personally. Understanding your storage options is crucial for security and cost management.</p>
+      
+      <div class="depository-overview">
+        <h3>Top IRS-Approved Depositories</h3>
+        
+        <div class="depository-cards">
+          <div class="depository-card">
+            <img src="/api/placeholder/200/100" alt="Delaware Depository" class="depository-image">
+            <h4>Delaware Depository</h4>
+            <div class="depository-details">
+              <p><strong>Locations:</strong> Wilmington, DE & Seal Beach, CA</p>
+              <p><strong>Insurance:</strong> $1 billion Lloyd's of London policy</p>
+              <p><strong>Security:</strong> UL-rated, Class 3 vault, armed guards, 24/7 monitoring</p>
+              <p><strong>Used By:</strong> Augusta Precious Metals, Goldco, Birch Gold Group</p>
+            </div>
+          </div>
+          
+          <div class="depository-card">
+            <img src="/api/placeholder/200/100" alt="Brinks Global Services" class="depository-image">
+            <h4>Brinks Global Services</h4>
+            <div class="depository-details">
+              <p><strong>Locations:</strong> Multiple worldwide, including Los Angeles, New York, Salt Lake City</p>
+              <p><strong>Insurance:</strong> $1 billion+ coverage</p>
+              <p><strong>Security:</strong> Industry-leading transportation expertise, advanced vault technology</p>
+              <p><strong>Used By:</strong> Birch Gold Group, American Hartford Gold, Noble Gold</p>
+            </div>
+          </div>
+          
+          <div class="depository-card">
+            <img src="/api/placeholder/200/100" alt="International Depository Services" class="depository-image">
+            <h4>International Depository Services (IDS)</h4>
+            <div class="depository-details">
+              <p><strong>Locations:</strong> Dallas, TX & New Castle, DE</p>
+              <p><strong>Insurance:</strong> All-risk, underwritten by Lloyd's of London</p>
+              <p><strong>Security:</strong> State-of-the-art security systems, armed security, dual controls</p>
+              <p><strong>Used By:</strong> Gold Alliance, Advantage Gold, Patriot Gold Group</p>
+            </div>
+          </div>
+          
+          <div class="depository-card">
+            <img src="/api/placeholder/200/100" alt="Texas Precious Metals Depository" class="depository-image">
+            <h4>Texas Precious Metals Depository</h4>
+            <div class="depository-details">
+              <p><strong>Location:</strong> Shiner, TX</p>
+              <p><strong>Insurance:</strong> 100% insurance on all holdings</p>
+              <p><strong>Security:</strong> Class 3 UL-rated vault, armed guards, biometric access</p>
+              <p><strong>Used By:</strong> Noble Gold (exclusive Texas storage option)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="storage-types">
+        <h3>Storage Options Compared</h3>
+        
+        <div class="storage-comparison">
+          <div class="storage-option">
+            <h4>Segregated Storage</h4>
+            <div class="storage-pros-cons">
+              <div class="pros">
+                <h5>Advantages</h5>
+                <ul>
+                  <li>Your specific metals are stored separately</li>
+                  <li>Individually inventoried and audited</li>
+                  <li>You own particular coins/bars with serial numbers</li>
+                  <li>Greater accountability and transparency</li>
+                  <li>Potentially higher value for numismatic or collectible items</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <h5>Disadvantages</h5>
+                <ul>
+                  <li>Higher annual fees ($150-$300/year)</li>
+                  <li>May require minimum investment amount</li>
+                </ul>
+              </div>
+            </div>
+            <div class="who-should-choose">
+              <p><strong>Best For:</strong> Investors with larger holdings who value maximum security and accountability, or those holding rare/collectible items that require individual authentication.</p>
+            </div>
+          </div>
+          
+          <div class="storage-option">
+            <h4>Non-Segregated (Allocated) Storage</h4>
+            <div class="storage-pros-cons">
+              <div class="pros">
+                <h5>Advantages</h5>
+                <ul>
+                  <li>Lower annual fees ($100-$150/year)</li>
+                  <li>Same physical metal security protections</li>
+                  <li>Full insurance coverage</li>
+                  <li>You own specific amount and type of metal</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <h5>Disadvantages</h5>
+                <ul>
+                  <li>Your metals are commingled with others</li>
+                  <li>You own equivalent metal, not specific coins/bars</li>
+                  <li>Cannot track individual serial numbers</li>
+                </ul>
+              </div>
+            </div>
+            <div class="who-should-choose">
+              <p><strong>Best For:</strong> Cost-conscious investors focused on standard bullion products where the specific coin or bar is less important than the metal content and purity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="storage-security">
+        <h3>Depository Security Features</h3>
+        
+        <div class="security-features">
+          <div class="security-feature">
+            <div class="feature-icon">🔐</div>
+            <div class="feature-details">
+              <h4>Physical Security</h4>
+              <ul>
+                <li>UL-rated Class 3 vaults with concrete and steel construction</li>
+                <li>Armed guards and security personnel</li>
+                <li>Perimeter security with multiple barriers</li>
+                <li>Bulletproof glass and reinforced structures</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="security-feature">
+            <div class="feature-icon">📹</div>
+            <div class="feature-details">
+              <h4>Electronic Monitoring</h4>
+              <ul>
+                <li>24/7/365 surveillance camera systems</li>
+                <li>Motion, heat, and vibration detectors</li>
+                <li>Dual control access protocols</li>
+                <li>Remote monitoring by security teams</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="security-feature">
+            <div class="feature-icon">🔍</div>
+            <div class="feature-details">
+              <h4>Audit & Verification</h4>
+              <ul>
+                <li>Regular third-party audits (typically quarterly)</li>
+                <li>Detailed inventory tracking systems</li>
+                <li>Regulatory compliance checks</li>
+                <li>Documented chain of custody</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="security-feature">
+            <div class="feature-icon">📄</div>
+            <div class="feature-details">
+              <h4>Insurance Coverage</h4>
+              <ul>
+                <li>All-risk insurance policies through Lloyd's of London</li>
+                <li>Coverage against theft, damage, natural disasters</li>
+                <li>Often $1 billion+ in total coverage</li>
+                <li>Detailed documentation provided</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="expert-help-banner animated-element">
+      <h3>Wondering Which Storage Option Is Right For You?</h3>
+      <p>Our experts will guide you through the pros and cons of each option and help you make the best decision for your unique situation.</p>
+      <a href="#lead-form" class="cta-primary">Talk to a Gold IRA Specialist</a>
+    </div>
+
+    <section id="market-outlook" class="guide-section animated-element">
+      <div class="section-header">
+        <h2 class="section-title">Gold Market Outlook 2025-2030</h2>
+        <div class="section-icon">📈</div>
+      </div>
+      
+      <div class="market-overview">
+        <p>Understanding current market dynamics and future projections can help inform your Gold IRA investment strategy. Here's what leading analysts are forecasting for precious metals through the remainder of this decade.</p>
+        
+        <div class="current-factors">
+          <h3>Key Factors Driving the Gold Market in 2025</h3>
+          
+          <div class="factor-grid">
+            <div class="market-factor">
+              <div class="factor-icon">💵</div>
+              <div class="factor-details">
+                <h4>Inflation Concerns</h4>
+                <p>With inflation reaching 7.3% in Q1 2025, investors are increasingly turning to gold as an inflation hedge. Historical data shows gold typically appreciates during periods of high inflation.</p>
+                <div class="factor-stat">
+                  <strong>Key Stat:</strong> Gold has maintained a 91% correlation with increases in the money supply over the past century.
+                </div>
+              </div>
+            </div>
+            
+            <div class="market-factor">
+              <div class="factor-icon">🏦</div>
+              <div class="factor-details">
+                <h4>Central Bank Purchasing</h4>
+                <p>Central banks worldwide added a record 1,136 tons of gold to their reserves in 2023, with continued strong purchasing through 2024-2025. This trend signals a global shift toward gold as a strategic reserve asset.</p>
+                <div class="factor-stat">
+                  <strong>Key Stat:</strong> Central bank gold purchases have increased 450% since 2020.
+                </div>
+              </div>
+            </div>
+            
+            <div class="market-factor">
+              <div class="factor-icon">⚖️</div>
+              <div class="factor-details">
+                <h4>Geopolitical Tensions</h4>
+                <p>Ongoing conflicts and international tensions have increased market volatility and driven investors toward safe-haven assets. Gold has historically performed well during periods of geopolitical uncertainty.</p>
+                <div class="factor-stat">
+                  <strong>Key Stat:</strong> Gold has averaged 14.3% gains during major geopolitical crises since 1970.
+                </div>
+              </div>
+            </div>
+            
+            <div class="market-factor">
+              <div class="factor-icon">💹</div>
+              <div class="factor-details">
+                <h4>Market Volatility</h4>
+                <p>Increasing volatility in equity markets has pushed investors toward portfolio diversification. Gold's negative correlation with stocks during market downturns enhances its appeal.</p>
+                <div class="factor-stat">
+                  <strong>Key Stat:</strong> Gold has shown a -0.4 correlation with the S&P 500 during market corrections.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="price-projections">
+          <h3>Gold Price Projections: 2025-2030</h3>
+          
+          <div class="analyst-projections">
+            <table class="projections-table">
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>2026 Projection</th>
+                  <th>2028 Projection</th>
+                  <th>2030 Projection</th>
+                  <th>Key Reasoning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Goldman Sachs</td>
+                  <td>$2,700/oz</td>
+                  <td>$3,100/oz</td>
+                  <td>$3,600/oz</td>
+                  <td>Rising inflation, central bank buying, falling real yields</td>
+                </tr>
+                <tr>
+                  <td>Bank of America</td>
+                  <td>$2,650/oz</td>
+                  <td>$3,000/oz</td>
+                  <td>$3,800/oz</td>
+                  <td>Recession concerns, continued monetary expansion</td>
+                </tr>
+                <tr>
+                  <td>Citibank</td>
+                  <td>$2,500/oz</td>
+                  <td>$2,800/oz</td>
+                  <td>$3,200/oz</td>
+                  <td>Moderate growth with inflation stabilization</td>
+                </tr>
+                <tr>
+                  <td>CPM Group</td>
+                  <td>$2,850/oz</td>
+                  <td>$3,500/oz</td>
+                  <td>$4,200/oz</td>
+                  <td>Supply shortages, increasing industrial demand</td>
+                </tr>
+                <tr>
+                  <td>World Gold Council</td>
+                  <td>$2,600/oz</td>
+                  <td>$3,200/oz</td>
+                  <td>$3,500/oz</td>
+                  <td>Structural market shifts favoring physical gold</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="projections-note">
+              <p>Note: Projections represent median estimates as of May 2025. Actual performance may vary based on economic conditions, policy changes, and unforeseen events.</p>
+            </div>
+          </div>
+          
+          <div class="historical-context">
+            <h4>Historical Context</h4>
+            <p>To put these projections in perspective, consider gold's price movement over the past two decades:</p>
+            <ul>
+              <li>2005: $435/oz</li>
+              <li>2010: $1,225/oz (181% increase in 5 years)</li>
+              <li>2015: $1,060/oz (13% decrease in 5 years)</li>
+              <li>2020: $1,898/oz (79% increase in 5 years)</li>
+              <li>2025: $2,321/oz (22% increase in 5 years)</li>
+            </ul>
+            <p>While past performance doesn't guarantee future results, gold has demonstrated substantial long-term appreciation, particularly during periods of economic stress and inflation.</p>
+          </div>
+        </div>
+        
+        <div class="investment-strategies">
+          <h3>Strategic Approaches to Gold IRA Investing</h3>
+          
+          <div class="strategy-cards">
+            <div class="strategy-card">
+              <h4>Conservative Approach</h4>
+              <div class="strategy-details">
+                <p><strong>Allocation:</strong> 5-10% of retirement portfolio</p>
+                <p><strong>Focus:</strong> Primarily gold bullion coins and bars</p>
+                <p><strong>Timing:</strong> Dollar-cost averaging with quarterly purchases</p>
+                <p><strong>Best For:</strong> Investors near retirement seeking stability and preservation</p>
+              </div>
+            </div>
+            
+            <div class="strategy-card">
+              <h4>Balanced Approach</h4>
+              <div class="strategy-details">
+                <p><strong>Allocation:</strong> 10-20% of retirement portfolio</p>
+                <p><strong>Focus:</strong> Mix of gold (70%) and silver (30%)</p>
+                <p><strong>Timing:</strong> Strategic purchasing during market dips</p>
+                <p><strong>Best For:</strong> Mid-career investors seeking both security and growth potential</p>
+              </div>
+            </div>
+            
+            <div class="strategy-card">
+              <h4>Growth-Oriented Approach</h4>
+              <div class="strategy-details">
+                <p><strong>Allocation:</strong> 20-30% of retirement portfolio</p>
+                <p><strong>Focus:</strong> Diversified metals (gold, silver, platinum, palladium)</p>
+                <p><strong>Timing:</strong> Strategic accumulation based on metal ratios</p>
+                <p><strong>Best For:</strong> Younger investors with longer time horizons seeking maximum appreciation</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="expert-insight">
+            <blockquote>
+              <p>"The most successful Gold IRA investors approach precious metals as insurance first and investment second. They consistently allocate a strategic percentage of their portfolio regardless of short-term price movements, focusing on the long-term protective qualities gold provides against systemic risks."</p>
+              <cite>— Peter Schiff, CEO of Euro Pacific Capital</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lead-form-section animated-element" id="lead-form">
+      <div class="lead-form-container">
+        <h3>Get Your Free Gold IRA Investment Kit</h3>
+        <p>Take the first step toward securing your retirement with physical precious metals. Our specialists will match you with the ideal Gold IRA company based on your unique needs.</p>
+        
+        <div class="kit-includes">
+          <h4>Your Free Kit Includes:</h4>
+          <div class="kit-items">
+            <div class="kit-item">
+              <div class="item-icon">📊</div>
+              <div class="item-details">
+                <h5>2025 Gold Market Analysis</h5>
+                <p>Expert insights and projections for precious metals</p>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="item-icon">📋</div>
+              <div class="item-details">
+                <h5>IRA Rollover Guide</h5>
+                <p>Step-by-step instructions for tax-free transfers</p>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="item-icon">📘</div>
+              <div class="item-details">
+                <h5>Gold Investment Manual</h5>
+                <p>Comprehensive strategies for precious metals investing</p>
+              </div>
+            </div>
+            <div class="kit-item">
+              <div class="item-icon">💰</div>
+              <div class="item-details">
+                <h5>Fee Comparison Chart</h5>
+                <p>Transparent breakdown of costs across top providers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <form method="POST" action="/submit-lead" id="gold-ira-lead-form">
+          <div class="form-grid">
+            <div class="form-control">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-control">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            
+            <div class="form-control">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+            </div>
+            
+            <div class="form-control">
+              <label for="investment">Investment Amount</label>
+              <select id="investment" name="investment" required>
+                <option value="">Select amount</option>
+                <option value="under-10k">Under $10,000</option>
+                <option value="10k-25k">$10,000 - $25,000</option>
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="100k-250k">$100,000 - $250,000</option>
+                <option value="250k+">$250,000+</option>
+              </select>
+            </div>
+            
+            <div class="form-control">
+              <label for="retirement_account">Retirement Account Type</label>
+              <select id="retirement_account" name="retirement_account">
+                <option value="">Select account type</option>
+                <option value="401k">401(k)</option>
+                <option value="traditional_ira">Traditional IRA</option>
+                <option value="roth_ira">Roth IRA</option>
+                <option value="sep_ira">SEP IRA</option>
+                <option value="simple_ira">SIMPLE IRA</option>
+                <option value="tsp">TSP</option>
+                <option value="403b">403(b)</option>
+                <option value="other">Other</option>
+                <option value="none">None/New Investment</option>
+              </select>
+            </div>
+            
+            <div class="form-control">
+              <label for="timeframe">Investment Timeframe</label>
+              <select id="timeframe" name="timeframe" required>
+                <option value="">Select timeframe</option>
+                <option value="immediate">Ready to invest now</option>
+                <option value="1-3months">Within 1-3 months</option>
+                <option value="3-6months">Within 3-6 months</option>
+                <option value="researching">Just researching options</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-privacy">
+            <input type="checkbox" id="privacy_agree" name="privacy_agree" required>
+            <label for="privacy_agree">I agree to the <a href="#">Privacy Policy</a> and consent to be contacted by the recommended gold IRA specialists.</label>
+          </div>
+          
+          <div class="form-submit">
+            <button type="submit">Get My Free Gold Investment Kit</button>
+          </div>
+        </form>
+        
+        <div class="form-guarantee">
+          <div class="guarantee-icon">🛡️</div>
+          <div class="guarantee-details">
+            <h4>Our Triple Guarantee</h4>
+            <ul>
+              <li><strong>No Pressure:</strong> Receive information with no obligation to purchase</li>
+              <li><strong>No Sharing:</strong> Your information is only shared with your selected company</li>
+              <li><strong>Top Providers:</strong> Only matched with A+ rated, fully vetted companies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-bonus animated-element">
+      <h2 class="section-title">Expert Answers to Common Gold IRA Questions</h2>
+      
+      <div class="expert-faq">
+        <div class="faq-item">
+          <div class="faq-question">
+            How is gold in my IRA valued for Required Minimum Distributions (RMDs)?
+          </div>
+          <div class="faq-answer">
+            <p>When calculating RMDs for Traditional Gold IRAs, the fair market value (FMV) of your precious metals is determined as of December 31st of the previous year. Your custodian will provide an annual statement with this valuation, which is typically based on the spot price of the metals multiplied by the quantity you hold.</p>
+            <p>You have two options for taking RMDs from a Gold IRA:</p>
+            <ol>
+              <li><strong>In-kind distribution:</strong> Taking physical possession of a portion of your metals equal to the RMD amount</li>
+              <li><strong>Cash distribution:</strong> Liquidating a portion of your metals to satisfy the RMD requirement</li>
+            </ol>
+            <p>Most investors choose the cash option for simplicity, but in-kind distributions can be advantageous if you want to maintain physical possession of the metals while still satisfying IRS requirements.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            What happens to my Gold IRA if the depository where my metals are stored goes bankrupt?
+          </div>
+          <div class="faq-answer">
+            <p>Your precious metals are held in a segregated or allocated account, meaning they remain your property regardless of the depository's financial status. Unlike bank deposits, your physical gold is not part of the depository's balance sheet or assets.</p>
+            <p>Additionally, reputable depositories carry significant insurance policies (typically through Lloyd's of London) that protect your holdings against theft, damage, or loss. In the unlikely event of a depository bankruptcy, your metals would either:</p>
+            <ul>
+              <li>Be transferred to another approved depository of your choosing</li>
+              <li>Remain secure until you designate a new custodian and storage arrangement</li>
+            </ul>
+            <p>This protection is one reason why choosing established, financially sound depositories with long operating histories is essential for Gold IRA security.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            Can I convert an existing Traditional IRA to a Roth Gold IRA?
+          </div>
+          <div class="faq-answer">
+            <p>Yes, you can convert a Traditional IRA to a Roth Gold IRA through a process called a Roth conversion. This involves:</p>
+            <ol>
+              <li>Establishing a new Roth Gold IRA account</li>
+              <li>Converting your Traditional IRA to the Roth status</li>
+              <li>Paying income taxes on the converted amount in the year of conversion</li>
+              <li>Purchasing IRS-approved precious metals with the converted funds</li>
+            </ol>
+            <p>This strategy can be particularly advantageous if:</p>
+            <ul>
+              <li>You expect to be in a higher tax bracket during retirement</li>
+              <li>You anticipate significant appreciation in precious metals</li>
+              <li>You want tax-free withdrawals in retirement</li>
+              <li>You want to avoid RMDs during your lifetime</li>
+            </ul>
+            <p>Many investors choose to execute partial conversions over several years to spread out the tax liability rather than converting their entire Traditional IRA at once.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="conclusion-section animated-element">
+      <h2 class="section-title">Taking Action: Your Gold IRA Roadmap</h2>
+      
+      <div class="action-steps">
+        <div class="step-icon">1</div>
+        <div class="step-content">
+          <h3>Request Your Free Gold IRA Guide</h3>
+          <p>Fill out the form above to receive a comprehensive information package from one of our top-rated Gold IRA providers. This no-obligation kit will give you the detailed information needed to make an informed decision.</p>
+          <a href="#lead-form" class="cta-secondary">Get My Free Kit Now</a>
+        </div>
+      </div>
+      
+      <div class="action-steps">
+        <div class="step-icon">2</div>
+        <div class="step-content">
+          <h3>Schedule a One-on-One Consultation</h3>
+          <p>Speak with a precious metals specialist who can answer your specific questions and explain how a Gold IRA would work for your particular situation, existing retirement accounts, and investment goals.</p>
+        </div>
+      </div>
+      
+      <div class="action-steps">
+        <div class="step-icon">3</div>
+        <div class="step-content">
+          <h3>Open Your Gold IRA Account</h3>
+          <p>When you're ready, your chosen Gold IRA company will handle the paperwork and guide you through the account setup process. Most companies offer streamlined, paperless options that take just 10-15 minutes to complete.</p>
+        </div>
+      </div>
+      
+      <div class="action-steps">
+        <div class="step-icon">4</div>
+        <div class="step-content">
+          <h3>Fund Your Account & Select Your Metals</h3>
+          <p>Complete your rollover or transfer to fund your new Gold IRA, then work with your precious metals specialist to select the optimal mix of IRS-approved metals based on your investment strategy.</p>
+        </div>
+      </div>
+      
+      <div class="final-cta">
+        <h3>Don't Wait to Protect Your Retirement</h3>
+        <p>With economic uncertainty, inflation concerns, and market volatility at elevated levels, now is the time to consider adding the protection of physical gold to your retirement strategy.</p>
+        <a href="#lead-form" class="cta-primary">Get Started Today</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="#" class="back-to-top" id="back-to-top">↑</a>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>GoldInvestorGuide</h4>
+        <p>We help investors make informed decisions about gold IRAs and precious metals investments through unbiased reviews and educational resources.</p>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reviews.html">Company Reviews</a></li>
+          <li><a href="guide.html">Gold IRA Guide</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Gold IRA FAQ</a></li>
+          <li><a href="#">401(k) Rollover Guide</a></li>
+          <li><a href="#">Precious Metals Guide</a></li>
+          <li><a href="#">Gold Price Charts</a></li>
+          <li><a href="#">Investment Calculator</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:info@goldinvestorguide.com">info@goldinvestorguide.com</a></li>
+          <li><a href="tel:8005551234">(800) 555-1234</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 GoldInvestorGuide. All rights reserved.</p>
+      <p class="disclaimer">Affiliate Disclosure: We may earn commissions when you click on links to companies mentioned on this site. This helps support our mission to provide valuable, independent information to our readers.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Reading progress bar
+    window.addEventListener('scroll', function() {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = (window.pageYOffset / totalHeight) * 100;
+      document.getElementById('reading-progress').style.width = progress + '%';
+    });
+    
+    // Sticky navigation highlighting
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('.guide-section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      window.addEventListener('scroll', function() {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 200;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href').substring(1) === current) {
+            link.classList.add('active');
+          }
+        });
+      });
+      
+      // Make navigation sticky on scroll
+      const guideNav = document.getElementById('guide-nav');
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+          guideNav.classList.add('scrolled');
+        } else {
+          guideNav.classList.remove('scrolled');
+        }
+      });
+    });
+    
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 700) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Animated elements on scroll
+    const animatedElements = document.querySelectorAll('.animated-element');
+    const observerOptions = {
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    animatedElements.forEach(element => {
+      observer.observe(element);
+    });
+    
+    // FAQ toggling
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const isOpen = answer.style.display === 'block';
+        
+        // Close all other answers
+        document.querySelectorAll('.faq-answer').forEach(a => {
+          a.style.display = 'none';
+        });
+        
+        document.querySelectorAll('.faq-question').forEach(q => {
+          q.classList.remove('active');
+        });
+        
+        // Toggle current answer
+        if (!isOpen) {
+          answer.style.display = 'block';
+          question.classList.add('active');
+        }
+      });
+    });
+    
+    // Hide all answers initially
+    document.querySelectorAll('.faq-answer').forEach(answer => {
+      answer.style.display = 'none';
+    });
+    
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuButton) {
+      mobileMenuButton.addEventListener('click', function() {
+        navLinks.classList.toggle('show');
+        mobileMenuButton.classList.toggle('active');
+      });
+    }
+    
+    // Form validation and submission
+    const leadForm = document.getElementById('gold-ira-lead-form');
+    if (leadForm) {
+      leadForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(leadForm);
+        const data = Object.fromEntries(formData.entries());
+        
+        // Add tracking parameters
+        data.source = 'gold-investor-guide';
+        data.landing_page = 'gold-ira-guide';
+        data.timestamp = new Date().toISOString();
+        data.referrer = document.referrer || 'direct';
+        
+        // Simulate form submission (replace with actual API call in production)
+        console.log('Lead form submitted:', data);
+        
+        // Show success message
+        const formContainer = document.querySelector('.lead-form-container');
+        formContainer.innerHTML = `
+          <div class="form-success animated-element visible">
+            <div class="success-icon">✓</div>
+            <h3>Thank You!</h3>
+            <p>Your free Gold Investment Kit has been requested successfully. A gold IRA specialist will contact you shortly to provide personalized information.</p>
+            <p>Please check your email for a confirmation and initial resources.</p>
+          </div>
+        `;
+        
+        // Scroll to success message
+        formContainer.scrollIntoView({behavior: 'smooth', block: 'start'});
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="About GoldStandard Research - Your trusted source for unbiased gold IRA company reviews and precious metals investment education." />
+  <title>About Us | GoldStandard Research</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold-primary: #d4af37;
+      --gold-light: #f5e7a3;
+      --gold-dark: #a17c1a;
+      --dark: #1c1c1c;
+      --gray-light: #f8f8f8;
+      --gray-medium: #eaeaea;
+      --white: #ffffff;
+      --shadow: 0 4px 12px rgba(0,0,0,0.1);
+      --blue-accent: #3a6ea5;
+      --green-accent: #4CAF50;
+      --red-accent: #e74c3c;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--gray-light);
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .nav-container {
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--dark);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo span {
+      color: var(--gold-primary);
+    }
+    
+    .logo:before {
+      content: "●";
+      color: var(--gold-primary);
+      margin-right: 0.5rem;
+      font-size: 1.2rem;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+    }
+    
+    .nav-links li {
+      margin-left: 2rem;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--gold-primary);
+    }
+    
+    .gold-price-ticker {
+      background-color: var(--dark);
+      color: var(--white);
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    
+    .price-up {
+      color: #4CAF50;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--dark) 0%, #323232 100%);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/api/placeholder/1200/600');
+      background-size: cover;
+      opacity: 0.1;
+      z-index: 0;
+    }
+    
+    .header-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    
+    header h1 span {
+      color: var(--gold-primary);
+    }
+    
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .badge {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+    }
+    
+    .badge img {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.5rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title:after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background-color: var(--gold-primary);
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    
+    .cta-primary {
+      background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+      color: var(--dark);
+      padding: 1rem 2rem;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      margin-top: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 8px rgba(165, 126, 26, 0.3);
+    }
+    
+    .cta-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(165, 126, 26, 0.4);
+    }
+    
+    .cta-secondary {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      margin-top: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .cta-secondary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* About Page Specific Styles */
+    .about-story {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+    }
+    
+    .story-content {
+      margin-bottom: 3rem;
+    }
+    
+    .story-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.8;
+    }
+    
+    .story-content strong {
+      color: var(--dark);
+    }
+    
+    .story-highlight {
+      border-left: 3px solid var(--gold-primary);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      background-color: rgba(212, 175, 55, 0.05);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+    }
+    
+    .story-timeline {
+      margin-top: 3rem;
+      border-left: 3px solid var(--gold-primary);
+      padding-left: 2rem;
+      position: relative;
+    }
+    
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+    }
+    
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    
+    .timeline-year {
+      position: absolute;
+      left: -4.5rem;
+      top: 0;
+      background: var(--gold-primary);
+      color: var(--dark);
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow);
+    }
+    
+    .timeline-content {
+      background-color: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-left: 3px solid var(--gold-primary);
+    }
+    
+    .timeline-content h3 {
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .timeline-content p {
+      color: #555;
+    }
+    
+    .timeline-item:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: var(--gold-primary);
+      border-radius: 50%;
+      position: absolute;
+      left: -3.2rem;
+      top: 0.75rem;
+      border: 4px solid var(--white);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+    }
+    
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .value-card {
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 3px solid var(--gold-primary);
+    }
+    
+    .value-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    
+    .value-icon {
+      background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+      font-size: 1.8rem;
+      box-shadow: 0 4px 10px rgba(165, 126, 26, 0.2);
+    }
+    
+    .value-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: var(--dark);
+    }
+    
+    .why-different {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+    }
+    
+    .research-process {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+    }
+    
+    .process-steps {
+      margin-top: 3rem;
+    }
+    
+    .process-step {
+      display: flex;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    
+    .process-step:last-child {
+      margin-bottom: 0;
+    }
+    
+    .process-step:not(:last-child):after {
+      content: "";
+      position: absolute;
+      top: 70px;
+      left: 25px;
+      height: calc(100% - 30px);
+      width: 2px;
+      background-color: var(--gold-light);
+    }
+    
+    .step-number {
+      background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+      color: var(--white);
+      width: 50px;
+      height: 50px;
+      min-width: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-right: 2rem;
+      box-shadow: 0 4px 10px rgba(165, 126, 26, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .step-content {
+      background-color: var(--gray-light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      flex-grow: 1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .step-content h3 {
+      margin-bottom: 0.8rem;
+      color: var(--dark);
+    }
+    
+    .team-section {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .team-member {
+      text-align: center;
+      padding: 2rem;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+    }
+    
+    .member-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1.5rem;
+      border: 3px solid var(--gold-light);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    .member-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .member-name {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+    }
+    
+    .member-title {
+      color: var(--gold-dark);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .member-bio {
+      color: #555;
+      line-height: 1.7;
+    }
+    
+    .editorial-independence {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+    }
+    
+    .independence-points {
+      margin: 2rem 0;
+    }
+    
+    .independence-point {
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--gold-primary);
+    }
+    
+    .independence-point h3 {
+      margin-bottom: 0.8rem;
+      color: var(--dark);
+    }
+    
+    .independence-disclosure {
+      background-color: var(--gray-light);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--gold-primary);
+    }
+    
+    .testimonials {
+      margin: 3rem 0;
+    }
+    
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .testimonial-card {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      color: #444;
+      line-height: 1.7;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+    
+    .testimonial-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--gold-light);
+      margin-right: 1rem;
+    }
+    
+    .author-info h4 {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    
+    .author-info p {
+      color: #777;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    
+    .quote-icon {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: rgba(212, 175, 55, 0.1);
+      font-size: 3rem;
+    }
+    
+    .contact-section {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+    }
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .contact-method {
+      text-align: center;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #fff 0%, var(--gray-light) 100%);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .contact-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--gold-dark);
+    }
+    
+    .contact-method h3 {
+      margin-bottom: 0.8rem;
+      color: var(--dark);
+    }
+    
+    .contact-method a {
+      color: var(--gold-dark);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .contact-method a:hover {
+      color: var(--dark);
+      text-decoration: underline;
+    }
+    
+    .hours {
+      color: #777;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+    
+    .newsletter-signup {
+      background: linear-gradient(135deg, var(--dark) 0%, #323232 100%);
+      color: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+    
+    .newsletter-signup h3 {
+      margin-bottom: 1rem;
+    }
+    
+    .newsletter-form {
+      display: flex;
+      margin-top: 1.5rem;
+    }
+    
+    .newsletter-form input {
+      flex-grow: 1;
+      padding: 1rem;
+      border: none;
+      border-radius: 50px 0 0 50px;
+      font-size: 1rem;
+    }
+    
+    .newsletter-form button {
+      border: none;
+      background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+      color: var(--dark);
+      padding: 1rem 1.5rem;
+      border-radius: 0 50px 50px 0;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    
+    .newsletter-form button:hover {
+      opacity: 0.9;
+    }
+    
+    .lead-form-section {
+      background: linear-gradient(135deg, var(--dark) 0%, #323232 100%);
+      color: var(--white);
+      padding: 3rem 2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      margin: 3rem 0;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    
+    .lead-form-section:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/api/placeholder/1200/600');
+      background-size: cover;
+      opacity: 0.05;
+      z-index: 0;
+    }
+    
+    .lead-form-container {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .lead-form-container h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .lead-form-container p {
+      margin-bottom: 2rem;
+    }
+    
+    footer {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 3rem 2rem 1rem;
+      margin-top: 5rem;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .footer-column h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    .footer-column h4:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background-color: var(--gold-primary);
+    }
+    
+    .footer-column ul {
+      list-style: none;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 0.8rem;
+    }
+    
+    .footer-column a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-column a:hover {
+      color: var(--gold-primary);
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    
+    .disclaimer {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      color: #888;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .timeline-year {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+      
+      .timeline-item:before {
+        display: none;
+      }
+      
+      .story-timeline {
+        padding-left: 1rem;
+      }
+      
+      .newsletter-form {
+        flex-direction: column;
+      }
+      
+      .newsletter-form input {
+        border-radius: 50px;
+        margin-bottom: 1rem;
+      }
+      
+      .newsletter-form button {
+        border-radius: 50px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="gold-price-ticker">
+  <strong>Live Gold Price:</strong> $2,321.45/oz <span class="price-up">↑ $12.30 (0.53%)</span> | Updated: May 8, 2025 10:23 AM EST
+</div>
+
+<div class="nav-container">
+  <nav>
+    <a href="index.html" class="logo">Gold<span>StandardResearch</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="guide.html">Gold IRA Guide</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <div class="mobile-menu-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</div>
+
+<header>
+  <div class="header-content">
+    <h1>About <span>GoldStandard Research</span></h1>
+    <p>Trusted by over 15,000 investors for transparent, unbiased guidance on gold and precious metals investing.</p>
+    
+    <div class="trust-badges">
+      <div class="badge">
+        <img src="/api/placeholder/20/20" alt="Verified" /> Founded 2011
+      </div>
+      <div class="badge">
+        <img src="/api/placeholder/20/20" alt="Secure" /> Independent Research
+      </div>
+      <div class="badge">
+        <img src="/api/placeholder/20/20" alt="Certified" /> Investor-First Approach
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <!-- Our Story Section -->
+  <section class="about-story">
+    <h2 class="section-title">Our Story</h2>
+    <p class="section-subtitle">From financial chaos to trusted guidance</p>
+    
+    <div class="story-content">
+      <p>GoldStandard Research began as a personal mission during one of the most chaotic decades in modern financial history. In the wake of the 2008 crisis, our founder — a longtime financial advisor — watched friends and family lose years of hard-earned savings almost overnight. Determined to find a more resilient path forward, he turned to time-tested assets like gold.</p>
+      
+      <div class="story-highlight">
+        <p>By <strong>2011</strong>, as gold prices surged to record highs and media hype hit a fever pitch, we noticed something strange: <strong>people were still buying — but few actually understood why</strong>. While most were driven by fear and FOMO, we stepped back and asked harder questions. What was hype, and what was truth?</p>
+      </div>
+      
+      <p>The deeper we looked, the clearer it became: much of the information online wasn't reliable. Sponsored content, paid rankings, and flashy marketing blurred the line between fact and promotion. The most honest insights came not from polished articles, but from <strong>investor forums like Reddit</strong>, where real people were asking real questions and sharing real experiences.</p>
+      
+      <p>That realization sparked the creation of GoldStandard Research — a platform built to cut through the noise. What began as a modest blog grew quickly as readers connected with our transparent, no-nonsense approach. We weren't selling gold — we were explaining it.</p>
+      
+      <div class="story-highlight">
+        <p>Over the years, we've grown into a trusted resource for thousands, supported by a team of former advisors, economists, and industry experts. But we've never lost sight of our founding purpose: to empower investors with <strong>unbiased, practical, and trustworthy guidance</strong> in a space too often clouded by hype.</p>
+      </div>
+      
+      <p>From panic to perspective — and from gold rush to grounded research — we've been helping people make smarter decisions every step of the way.</p>
+    </div>
+    
+<div class="story-timeline">
+  <div class="timeline-item">
+    <div class="timeline-year">2008</div>
+    <div class="timeline-content">
+      <h3>Global Financial Crisis</h3>
+      <p>The collapse of Lehman Brothers sends shockwaves through global markets. Our founder watches lifelong savings vanish for many clients — prompting a search for resilient, inflation-resistant assets like gold.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2010</div>
+    <div class="timeline-content">
+      <h3>Early Gold Rally Signals Shift</h3>
+      <p>Gold surpasses $1,200/oz for the first time. We begin to notice a growing wave of investor anxiety online — forums light up with questions about gold IRAs, but misinformation spreads just as fast.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2011</div>
+    <div class="timeline-content">
+      <h3>Hype Peaks, But Signals Don't Add Up</h3>
+      <p>Gold hits its all-time high of $1,921/oz. Media frenzy ensues. But instead of buying into the hype, we ask: <em>why now?</em> Our research reveals FOMO-driven behavior and paid content dominating the narrative — not fundamentals.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2011</div>
+    <div class="timeline-content">
+      <h3>GoldStandard Research Is Born</h3>
+      <p>Frustrated by marketing disguised as education, we launch a blog to share plainspoken insights rooted in economic data, not commissions. Our first readers come from Reddit and Bogleheads forums.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2013</div>
+    <div class="timeline-content">
+      <h3>The Crash That Validated Our Mission</h3>
+      <p>Gold prices drop nearly 30% in a year. Many investors who chased the 2011 rally are left underwater. For us, it's a painful but important reminder: timing and understanding matter more than hype.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2020</div>
+    <div class="timeline-content">
+      <h3>COVID & Monetary Response</h3>
+      <p>Pandemic panic and central bank stimulus revive interest in gold. We expand our team to include economists and retirement planners, knowing investors need context more than ever.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2023</div>
+    <div class="timeline-content">
+      <h3>Gold Crosses $2,000 Again</h3>
+      <p>Bank collapses and inflation fears return gold to the spotlight. We double down on independent reviews and launch our affiliate comparison engine — helping readers turn uncertainty into strategy.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">Today</div>
+    <div class="timeline-content">
+      <h3>Trusted by Thousands</h3>
+      <p>GoldStandard Research now supports over 15,000 readers monthly, providing no-nonsense insights into gold IRAs, physical bullion, and portfolio diversification — all backed by real research and real user experience.</p>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Our Values & Approach Section -->
+  <section class="why-different">
+    <h2 class="section-title">Why We're Different</h2>
+    <p class="section-subtitle">Our commitment to you goes beyond standard industry practices</p>
+    
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">🔍</div>
+        <h3 class="value-title">Unbiased Research</h3>
+        <p>Unlike most gold investment sites, we don't push any single company. Our review process includes rigorous evaluation, mystery shopping, and customer interviews. We disclose everything—the good, the bad, and the buried fine print.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">✓</div>
+        <h3 class="value-title">Hand-Picked Partners</h3>
+        <p>Fewer than 20% of gold IRA companies we review make our recommended list. We only feature companies with transparent pricing, proven track records, exceptional customer service, and fair buyback policies.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">💬</div>
+        <h3 class="value-title">Straight Talk, No Jargon</h3>
+        <p>We explain complex investment concepts in plain English. No confusing terminology, no hidden fees, and no pressure. Just real information backed by experience and research.</p>
+      </div>
+      
+      <div class="value-card">
+        <div class="value-icon">👥</div>
+        <h3 class="value-title">Reader-First Model</h3>
+        <p>Yes, we earn through affiliate partnerships, but only after a company passes our strict screening process—and never at your expense. Our primary allegiance is to you, not to gold dealers or IRA providers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Research Process Section -->
+  <section class="research-process">
+    <h2 class="section-title">Our Research Process</h2>
+    <p class="section-subtitle">How we evaluate and select gold IRA companies</p>
+    
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Initial Screening</h3>
+          <p>We identify companies with established track records (minimum 5 years in business), proper licensing, and clean regulatory histories. We eliminate companies with unresolved complaints or regulatory issues.</p>
+        </div>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Mystery Shopping</h3>
+          <p>Our team conducts anonymous interactions with each company, evaluating their sales approach, transparency about fees, and quality of educational materials. We note any high-pressure tactics or misleading statements.</p>
+        </div>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Fee Analysis</h3>
+          <p>We create detailed breakdowns of all costs associated with each company's gold IRA offerings, including setup fees, annual maintenance, storage costs, and buyback policies.</p>
+        </div>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Customer Experience Research</h3>
+          <p>We interview actual customers, analyze verified reviews across multiple platforms, and explore community feedback from <strong>investor forums like Reddit</strong> to capture authentic user experiences.</p>
+        </div>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Final Evaluation</h3>
+          <p>Companies that excel across all categories are considered for our recommended list. We continuously monitor our selected companies and update our recommendations as needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Team Section -->
+  <section class="team-section">
+    <h2 class="section-title">Meet Our Team</h2>
+    <p class="section-subtitle">Experts dedicated to your financial education</p>
+    
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="/api/placeholder/200/200" alt="Founder photo">
+        </div>
+        <h3 class="member-name">James Anderson</h3>
+        <p class="member-title">Founder & Lead Analyst</p>
+        <p class="member-bio">Former financial advisor with 20+ years of experience. After witnessing the devastating impact of the 2008 financial crisis on his clients, James dedicated himself to researching alternative wealth preservation strategies.</p>
+      </div>
+      
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="/api/placeholder/200/200" alt="Economic Analyst photo">
+        </div>
+        <h3 class="member-name">Dr. Sarah Williams</h3>
+        <p class="member-title">Chief Economic Analyst</p>
+        <p class="member-bio">Ph.D. in Economics with specialization in monetary policy. Former research fellow at a leading economic institute, Sarah brings academic rigor to our analysis of macroeconomic trends affecting precious metals.</p>
+      </div>
+      
+      <div class="team-member">
+        <div class="member-photo">
+          <img src="/api/placeholder/200/200" alt="IRA Specialist photo">
+        </div>
+        <h3 class="member-name">Michael Reeves</h3>
+        <p class="member-title">IRA & Retirement Specialist</p>
+        <p class="member-bio">Certified Financial Planner with expertise in self-directed IRAs and retirement planning. Michael helps translate complex IRS regulations into actionable guidance for our readers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial Independence Section -->
+  <section class="editorial-independence">
+    <h2 class="section-title">Our Editorial Independence</h2>
+    <p class="section-subtitle">How we maintain objectivity while generating revenue</p>
+    
+    <div class="independence-content">
+      <p>We believe in complete transparency about our business model:</p>
+      
+      <div class="independence-points">
+        <div class="independence-point">
+          <h3>How We Make Money</h3>
+          <p>GoldStandard Research generates revenue through affiliate partnerships with select gold IRA companies. When you request information or open an account through our links, we may receive a commission—at no additional cost to you.</p>
+        </div>
+        
+        <div class="independence-point">
+          <h3>Strict Separation</h3>
+          <p>Our research and editorial teams operate independently from our business partnerships. Companies cannot pay to alter our reviews or rankings. Our recommendations are based solely on merit and value to our readers.</p>
+        </div>
+        
+        <div class="independence-point">
+          <h3>Continuous Reevaluation</h3>
+          <p>We regularly reassess our recommended companies to ensure they maintain their high standards. If a partner company fails to meet our criteria during these reviews, we will remove them from our recommendations.</p>
+        </div>
+      </div>
+      
+      <div class="independence-disclosure">
+        <p><strong>Our Promise to You:</strong> While we do earn commissions, we never compromise on providing honest, accurate information. Your financial wellbeing remains our top priority.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2 class="section-title">What Our Readers Say</h2>
+    <p class="section-subtitle">Trusted by thousands of investors across the country</p>
+    
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="quote-icon">❝</div>
+        <p class="testimonial-text">After reading conflicting information about gold IRAs for months, I found GoldStandard Research and finally got straight answers. Their comparison guides helped me avoid several companies with hidden fees, and I eventually found the perfect provider for my needs. Their honest approach is refreshing.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div class="author-info">
+            <h4>David K.</h4>
+            <p>Retired Engineer, Boston MA</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="quote-icon">❝</div>
+        <p class="testimonial-text">The educational resources on this site are exceptional. Instead of pushing me to buy gold right away, they took the time to explain how different assets work together in a portfolio. Their balanced approach helped me make an informed decision about allocating a portion of my retirement to precious metals.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div class="author-info">
+            <h4>Patricia M.</h4>
+            <p>Small Business Owner, Austin TX</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="quote-icon">❝</div>
+        <p class="testimonial-text">I was almost taken in by a gold company with aggressive sales tactics until I found GoldStandard Research. Their detailed fee comparison showed me I was about to pay thousands more than necessary. Their recommendations led me to a reputable company with fair pricing and excellent service.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar"></div>
+          <div class="author-info">
+            <h4>Thomas W.</h4>
+            <p>Healthcare Professional, Denver CO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Connect Section -->
+  <section class="contact-section">
+    <h2 class="section-title">Connect With Us</h2>
+    <p class="section-subtitle">Have questions or feedback? We'd love to hear from you</p>
+    
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-method">
+          <div class="contact-icon">✉️</div>
+          <h3>Email Us</h3>
+          <p><a href="mailto:research@goldstandardresearch.com">research@goldstandardresearch.com</a></p>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">📱</div>
+          <h3>Call Us</h3>
+          <p><a href="tel:8005551234">(800) 555-1234</a></p>
+          <p class="hours">Monday-Friday: 9am-5pm EST</p>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">📬</div>
+          <h3>Mailing Address</h3>
+          <p>GoldStandard Research<br>123 Financial District<br>New York, NY 10004</p>
+        </div>
+      </div>
+      
+      <div class="newsletter-signup">
+        <h3>Stay Informed</h3>
+        <p>Subscribe to our weekly newsletter for market insights, price forecasts, and investment strategies — all with the same unbiased approach you've come to trust.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="cta-secondary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="lead-form-section" id="lead-form">
+    <div class="lead-form-container">
+      <h3>Ready to Explore Gold IRA Options?</h3>
+      <p>Get matched with a top-rated gold IRA provider that meets your specific investment needs and goals.</p>
+      
+      <a href="index.html#lead-form" class="cta-primary">Compare Top Gold IRA Companies</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>GoldStandard Research</h4>
+      <p>We help investors make informed decisions about gold IRAs and precious metals investments through unbiased reviews and educational resources.</p>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Company Reviews</a></li>
+        <li><a href="guide.html">Gold IRA Guide</a></li>
+        <li><a href="news.html">News & Updates</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Gold IRA FAQ</a></li>
+        <li><a href="#">401(k) Rollover Guide</a></li>
+        <li><a href="#">Precious Metals Guide</a></li>
+        <li><a href="#">Gold Price Charts</a></li>
+        <li><a href="#">Investment Calculator</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <ul>
+        <li><a href="mailto:info@goldstandardresearch.com">info@goldstandardresearch.com</a></li>
+        <li><a href="tel:8005551234">(800) 555-1234</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 GoldStandard Research. All rights reserved.</p>
+    <p class="disclaimer">Affiliate Disclosure: We may earn commissions when you click on links to companies mentioned on this site. This helps support our mission to provide valuable, independent information to our readers.</p>
+  </div>
+</footer>
+
+<script>
+  // Gold price ticker animation (matching the one from index.html)
+  const goldPriceElement = document.querySelector('.gold-price-ticker');
+  if (goldPriceElement) {
+    let currentPrice = 2321.45;
+    
+    // Simulate price updates
+    setInterval(() => {
+      // Random small price change
+      const change = (Math.random() - 0.48) * 2;
+      const newPrice = currentPrice + change;
+      currentPrice = newPrice;
+      
+      // Update display with animation
+      const priceElement = document.createElement('span');
+      priceElement.textContent = `${newPrice.toFixed(2)}/oz `;
+      
+      const changeElement = document.createElement('span');
+      changeElement.textContent = `${change >= 0 ? '↑' : '↓'} ${Math.abs(change).toFixed(2)} (${Math.abs(change / currentPrice * 100).toFixed(2)}%)`;
+      changeElement.className = change >= 0 ? 'price-up' : 'price-down';
+      
+      const timeElement = document.createElement('span');
+      const now = new Date();
+      timeElement.textContent = ` | Updated: ${now.toLocaleTimeString()} EST`;
+      
+      // Clear and update content
+      goldPriceElement.innerHTML = '<strong>Live Gold Price:</strong> ';
+      goldPriceElement.appendChild(priceElement);
+      goldPriceElement.appendChild(changeElement);
+      goldPriceElement.appendChild(timeElement);
+    }, 5000);
+  }
+</script>
+
+</body>
+</html>
