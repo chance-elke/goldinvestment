@@ -1,0 +1,47 @@
+// Google Apps Script handler for the form
+function doPost(e) {
+  try {
+    // Parse the form data
+    const data = e.parameter;
+    
+    // Access the active spreadsheet and sheet
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getActiveSheet();
+    
+    // Format data for the spreadsheet
+    const rowData = [
+      new Date(),               // Timestamp
+      data.name || "",          // Name
+      data.email || "",         // Email
+      data.phone || "",         // Phone
+      data.investment || "",    // Investment Amount
+      data.retirement_account || "", // Retirement Account Type
+      data.timeframe || "",     // Investment Timeframe
+      data.privacy_agree ? "Yes" : "No", // Privacy Agreement
+      data.source || "",        // Source
+      data.landing_page || "",  // Landing Page
+      data.timestamp || "",     // Form Timestamp
+      data.referrer || "",      // Referrer
+      data.utm_source || "",    // UTM Source
+      data.utm_medium || "",    // UTM Medium
+      data.utm_campaign || ""   // UTM Campaign
+    ];
+    
+    // Add row to spreadsheet
+    sheet.appendRow(rowData);
+    
+    // Return HTML success response
+    return HtmlService.createHtmlOutput(
+      "<p>Success! Your form submission has been recorded.</p>"
+    );
+  } 
+  catch(error) {
+    // Log the error
+    console.error('Error processing form submission: ' + error);
+    
+    // Return error response
+    return HtmlService.createHtmlOutput(
+      "<p>Error: " + error.toString() + "</p>"
+    );
+  }
+}
