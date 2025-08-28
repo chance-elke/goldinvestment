@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold IRA Logo Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .logo-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .logo {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #d4af37 0%, #a17c1a 100%);
+      color: #1c1c1c;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .logo-small {
+      width: 80px;
+      height: 80px;
+      font-size: 14px;
+    }
+    .logo p {
+      margin: 5px 0;
+    }
+    .logo .company-type {
+      font-size: 16px;
+      opacity: 0.8;
+    }
+    .logo-small .company-type {
+      font-size: 10px;
+    }
+    .banner {
+      width: 300px;
+      height: 200px;
+      font-size: 30px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #d4af37;
+      color: #1c1c1c;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gold IRA Logo Generator</h1>
+  <p>Click the logos to download them. You can then use them in your project.</p>
+  
+  <div class="logo-container" id="logoContainer">
+    <!-- Logos will be generated here -->
+  </div>
+  
+  <button id="generateBtn">Generate Logos</button>
+  
+  <script>
+    const companies = [
+      { id: 'goldcrest', name: 'GoldCrest', type: 'Precious Metals' },
+      { id: 'augusta', name: 'Augusta', type: 'Precious Metals' },
+      { id: 'goldco', name: 'Goldco', type: 'Gold IRA' },
+      { id: 'american-hartford', name: 'American Hartford', type: 'Gold' },
+      { id: 'noble', name: 'Noble Gold', type: 'Investments' }
+    ];
+    
+    document.getElementById('generateBtn').addEventListener('click', generateLogos);
+    
+    function generateLogos() {
+      const container = document.getElementById('logoContainer');
+      container.innerHTML = '';
+      
+      companies.forEach(company => {
+        // Generate regular logo
+        const logo = document.createElement('div');
+        logo.className = 'logo';
+        logo.innerHTML = `
+          <p>${company.name}</p>
+          <p class="company-type">${company.type}</p>
+        `;
+        logo.setAttribute('data-filename', `${company.id}-logo.png`);
+        logo.addEventListener('click', downloadLogo);
+        container.appendChild(logo);
+        
+        // Generate banner
+        const banner = document.createElement('div');
+        banner.className = 'logo banner';
+        banner.innerHTML = `
+          <p>${company.name}</p>
+          <p class="company-type">${company.type}</p>
+        `;
+        banner.setAttribute('data-filename', `${company.id}-banner.png`);
+        banner.addEventListener('click', downloadLogo);
+        container.appendChild(banner);
+      });
+    }
+    
+    function downloadLogo(event) {
+      const logo = event.currentTarget;
+      const filename = logo.getAttribute('data-filename');
+      
+      html2canvas(logo).then(canvas => {
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      });
+    }
+  </script>
+  
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+</html> 
